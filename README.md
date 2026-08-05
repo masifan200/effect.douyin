@@ -22,11 +22,14 @@
 | 补诗词 | — |
 | 补歌词 | — |
 
-蘑菇题材可以再拆出玩法变体，共用同一套素材：
+蘑菇题材再拆出的玩法变体，共用同一套素材，**按下面的顺序做**：
 
-| 玩法 | 说明 |
-|------|------|
-| 下锅接菌 | 蘑菇往下掉，拨开毒菇、把可食用的接进锅；结算时锅里混进毒菇就中毒。详见 [DontEatPoisonousMushrooms 的玩法方向](DontEatPoisonousMushrooms/README.md#一玩法与素材分工) |
+| 顺序 | 玩法 | 建议工程名 | 说明 |
+|------|------|------|------|
+| 1️⃣ | 蘑菇汤 | `MushroomSoup` | 蘑菇往下掉，拨开毒菇、把可食用的接进锅；结算时锅里混进毒菇就中毒 |
+| 2️⃣ | 采蘑菇的小姑娘 | `MushroomPickingGirl` | 玩法待设计。自带儿歌 IP，注意音源版权 |
+
+详见 [DontEatPoisonousMushrooms 的玩法方向](DontEatPoisonousMushrooms/README.md#一玩法与素材分工)。
 
 ---
 
