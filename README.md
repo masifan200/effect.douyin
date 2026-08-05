@@ -8,7 +8,7 @@
 
 | 特效 | 状态 | 说明 |
 |------|------|------|
-| [SampleMathProblem](SampleMathProblem/) | 🔲 起步 | 算数题特效 |
+| [SampleMathProblem](SampleMathProblem/) | 🔲 起步 | 摇头口算大挑战。开发手册已写完，工程仍是空场景，见 [README](SampleMathProblem/README.md) |
 
 ## 规划中
 
@@ -32,6 +32,29 @@
 
 **不入库**：`Library/`（编辑器缓存）、`*-lock`。
 详见 [.gitignore](.gitignore)，里面也标明了哪些**必须**入库。
+
+---
+
+## 换台电脑怎么开工
+
+```bash
+git clone https://github.com/masifan200/effect.douyin.git
+```
+
+用 **像塑** PC 端（工程内部标识 `Douyin AR`，官网 effect.douyin.com）打开子目录里的
+`effect.dyehpj`。当前工程基于 **9.1.3**，脚本用 JavaScript
+（`require('amazingpro.js')`，不是 Lua）。
+
+## 分支约定
+
+| 分支 | 用途 |
+| ---- | ---- |
+| `main` | 主干，保持随时可用 |
+| `feature/*` | 开发新功能时临时开，合并回 `main` 后删除 |
+
+发布用 tag 标记（如 `v1.0`），不设长期发布分支。
+
+四个仓库（本仓库、`IDEA`、`gradient-puzzle`、`puppet-show`）用同一套约定。
 
 ---
 
