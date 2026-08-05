@@ -9,6 +9,7 @@
 | 特效 | 状态 | 说明 |
 |------|------|------|
 | [SampleMathProblem](SampleMathProblem/) | 🔲 起步 | 摇头口算大挑战。开发手册已写完，工程仍是空场景，见 [README](SampleMathProblem/README.md) |
+| [DontEatPoisonousMushrooms](DontEatPoisonousMushrooms/) | 🔲 起步 | 别吃毒蘑菇，摇头识菌答题。素材规范与 36 种菌种库已定，工程仍是空场景，见 [README](DontEatPoisonousMushrooms/README.md) |
 
 ## 规划中
 
