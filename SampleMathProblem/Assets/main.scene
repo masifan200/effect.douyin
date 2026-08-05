@@ -1,0 +1,26 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+visible: true
+config:
+  __class: Map
+  RTInputDeferredCopy: true
+msaa:
+  __class: MSAAMode
+  value: _4X
+jsScriptSystems:
+  - !<str> js/AmazingProRuntime.js
+  - !<str> js/Graph/GraphSystem.js
+  - !<str> js/IEJsEntrySystemScript.js
+  - !<str> js/JSAssetSystem.js
+  - !<str> js/AmazingProEditor.js
+  - !<str> js/IEJsEntrySystemScript.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: Auto
