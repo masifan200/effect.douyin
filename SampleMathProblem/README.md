@@ -9,7 +9,7 @@
 | 工具版本 | 9.1.3（见 `effect.dyehpj` 的 `version` 字段） |
 | 脚本语言 | JavaScript（CommonJS，`require('amazingpro.js')`） |
 | 特效类型 | 人脸姿态识别互动答题 |
-| 数字渲染 | **图片贴图**（非文字组件），素材见 `Assets/数字/` |
+| 数字渲染 | 算式与按钮答案用**图片贴图**（`Assets/数字/`），分数与结算用 **Text 组件** |
 
 **当前工程状态**：素材已就位（`Assets/数字/`、`Assets/背景/`），但 `Assets/main.scene` 仍是空场景，`Graph/graph.json` 只有默认的 `Start` / `Update` 事件节点。下文第二、三、四章即为从零搭建的完整步骤。
 
@@ -89,12 +89,13 @@
 
 | 缺什么 | 为什么需要 | 优先级 |
 | ---- | ---- | ---- |
-| **斜杠 `/`** | 分数要显示成 `3/10`，现有素材没有斜杠 | 🔴 必须 |
-| **白色数字 0~9** | 按钮上的答案和分数是白字，现有只有深蓝一套 | 🔴 必须 |
 | 答对 / 答错反馈 | 选完给个即时反馈，否则只有分数跳变 | 🟡 建议 |
+| 白色数字 0~9 | 效果图里按钮上的答案是白字；沿用现有深蓝也能看清，是纯视觉取舍 | ⚪ 可选 |
 | 空心爱心 | 若要做生命值，扣血得有空心态 | ⚪ 看是否用 |
 
-> **白色数字有个省事的办法**：把数字重出成**白色主体 + 黑描边**，再用 `IFSprite2d.colorTint` 染色 —— 黑描边乘任何颜色仍是黑，白色主体乘目标色就变成目标色，一套素材通吃题干深蓝和按钮白色。前提是像塑的 `colorTint` 为乘法混色，**需真机实测确认**，可行的话能省掉一整套素材。
+> **分数不需要斜杠素材** —— 分数区和结算面板都用 Text 组件，直接 `str = "3/10"`，斜杠是文字的一部分。只有算式和按钮上的答案数字才走图片贴图。
+
+> 若要还原效果图里的白色按钮数字，比再出一套省事的办法是：把数字重出成**白色主体 + 黑描边**，再用 `IFSprite2d.colorTint` 染色 —— 黑描边乘任何颜色仍是黑，白色主体乘目标色就变成目标色，一套素材通吃题干深蓝和按钮白色。前提是像塑的 `colorTint` 为乘法混色，**需真机实测确认**。
 
 > **生命红心当前规则里没有用到**。素材先留着，要不要做「答错扣心、扣光提前结束」是后续决定 —— 现在是固定 10 题跑完。
 
@@ -136,7 +137,7 @@
 | ---- | ---- | ---- | ---- | ---- |
 | `Bg` | Sprite | 1 | 铺满全屏 | 网格纸底图 |
 | `ScorePanel` | Sprite | 1 | 左上角 | 黑色半透明底板 |
-| `ScoreSlots` | Sprite | **5** | 分数板内，等距 | 显示 `X/10`，最长 `10/10` 占 5 位 |
+| `ScoreText` | **Text** | 1 | 分数板内 | 显示 `分数：3/10`，文字组件不用槽位 |
 | `Heart` | Sprite | 1 | 分数板右侧 | 生命红心（当前规则未使用） |
 | `QuestionPanel` | Sprite | 1 | 上方 | 浅蓝圆角题目底板 |
 | `QuestionSlots` | Sprite | **9** | 题目板内，等距 | 算式，最长 `100+100=?` 占 9 位 |
@@ -145,9 +146,9 @@
 | `BtnRight` | Sprite | 1 | 右下 | 紫色按钮 |
 | `RightSlots` | Sprite | **3** | 紫色按钮内，等距 | 右侧答案，最大 3 位数 |
 | `FinalPanel` | Sprite | 1 | 屏幕正中 | 结算底板，**初始隐藏** |
-| `FinalSlots` | Sprite | **5** | 结算板内，等距 | 最终成绩，**初始隐藏** |
+| `FinalText` | **Text** | 1 | 结算板内 | 最终成绩如 `8/10`，**初始隐藏** |
 
-**槽位数量的来历**：a、b 都取 1~100，和最大 200（3 位），所以算式最长是 `100+100=?` = 3+1+3+1+1 = **9 位**，答案最长 3 位，分数最长 `10/10` = 5 位。
+**槽位数量的来历**：a、b 都取 1~100，和最大 200（3 位），所以算式最长是 `100+100=?` = 3+1+3+1+1 = **9 位**，答案最长 3 位。分数和结算走 Text 组件，不占槽位。
 
 ### 3.3 贴图资源绑定
 
@@ -160,7 +161,6 @@
 | `texSub` | `减号.png` |
 | `texEq` | `等号.png` |
 | `texQuestion` | `问号.png` |
-| `texSlash` | 斜杠素材（**待补**） |
 
 > `digitTextures` 的顺序至关重要 —— 脚本直接用 `digitTextures[数字]` 取图，拖错顺序会出现「显示 3 实际是 7」这种诡异 bug，且不会报错。
 
@@ -185,13 +185,13 @@ class MathQuiz extends APJS.ScriptComponent {
 
     onStart() {
         // 绑定的节点（检查器中拖拽赋值）：
-        //   this.questionSlots[9]  this.leftSlots[3]  this.rightSlots[3]
-        //   this.scoreSlots[5]     this.finalSlots[5]
+        //   this.questionSlots[9]  this.leftSlots[3]  this.rightSlots[3]   ← Sprite 槽位
+        //   this.scoreText  this.finalText                                 ← Text 组件
         //   this.questionPanel  this.btnLeft  this.btnRight
         //   this.scorePanel     this.finalPanel
         // 绑定的贴图：
         //   this.digitTextures[10]  this.texAdd  this.texSub
-        //   this.texEq  this.texQuestion  this.texSlash
+        //   this.texEq  this.texQuestion
 
         this.questionIndex = 0;      // 已答题数
         this.correctCount  = 0;      // 答对数
@@ -201,7 +201,7 @@ class MathQuiz extends APJS.ScriptComponent {
         this.finished      = false;  // 是否已结算
 
         this.finalPanel.enabled = false;
-        this.hideSlots(this.finalSlots);
+        this.finalText.enabled  = false;
 
         this.updateScore();
         this.newQuestion();
@@ -344,12 +344,9 @@ class MathQuiz extends APJS.ScriptComponent {
         this.resultTimer = RESULT_DELAY;
     }
 
-    /** 分数区：答对数 / 总题数 */
+    /** 分数区：答对数 / 总题数，走 Text 组件 */
     updateScore() {
-        const chars = this.numToTextures(this.correctCount)
-            .concat([this.texSlash])
-            .concat(this.numToTextures(TOTAL_QUESTIONS));
-        this.renderSlots(this.scoreSlots, chars);
+        this.scoreText.str = "分数：" + this.correctCount + "/" + TOTAL_QUESTIONS;
     }
 
     /** 结算：中间显示最终成绩，其余全部隐藏 */
@@ -360,16 +357,14 @@ class MathQuiz extends APJS.ScriptComponent {
         this.btnLeft.enabled       = false;
         this.btnRight.enabled      = false;
         this.scorePanel.enabled    = false;
+        this.scoreText.enabled     = false;
         this.hideSlots(this.questionSlots);
         this.hideSlots(this.leftSlots);
         this.hideSlots(this.rightSlots);
-        this.hideSlots(this.scoreSlots);
 
         this.finalPanel.enabled = true;
-        const chars = this.numToTextures(this.correctCount)
-            .concat([this.texSlash])
-            .concat(this.numToTextures(TOTAL_QUESTIONS));
-        this.renderSlots(this.finalSlots, chars);
+        this.finalText.enabled  = true;
+        this.finalText.str = this.correctCount + "/" + TOTAL_QUESTIONS;
     }
 
     /** 从人脸追踪组件读取头部 Yaw 角度（度）——具体 API 见第五章 */
