@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "a324ed5d-8948-8cc7-4e14-8f67274fd273",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "背景",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

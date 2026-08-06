@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "5083adb9-b520-f881-d2d0-0baef381b7bd",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "铁锅",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 2,
+    "compressQuality": 0,
+    "compressMaxResolution": 1024,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\铁锅.png",
+    "references": []
+  }
+]

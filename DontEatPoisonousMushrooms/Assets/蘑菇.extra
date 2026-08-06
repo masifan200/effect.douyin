@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "cd143b6f-ed40-c890-3e10-2ba06e3f03e9",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "蘑菇",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": []
+  }
+]
