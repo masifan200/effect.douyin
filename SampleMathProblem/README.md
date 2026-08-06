@@ -168,222 +168,58 @@
 
 ## 四、核心脚本
 
-新建脚本组件 `MathQuiz.js`，挂到场景根节点，按 3.2 / 3.3 绑定好节点与贴图。
+> **完整代码在 [`Assets/Script/MathQuiz.js`](Assets/Script/MathQuiz.js)**。
+> 文档只讲设计决策，不再内嵌代码 —— 两份代码早晚会对不上。
 
-```javascript
-const APJS = require('amazingpro.js');
+挂到场景根节点，按 3.2 / 3.3 绑定好节点与贴图即可。
 
-// ---- 可调参数 ----
-const TOTAL_QUESTIONS = 10;   // 总题数，改 5 就是 5 题模式
-const YAW_THRESHOLD   = 15;   // 摇头判定角度（度）
-const ANSWER_COOLDOWN = 2.0;  // 每题开始后的答题冷却（秒）
-const RESULT_DELAY    = 1.5;  // 答完停留多久出下一题（秒）
-const WRONG_MIN_GAP   = 6;    // 干扰答案与正确答案的最小差值
-const WRONG_MAX_GAP   = 22;   // 干扰答案与正确答案的最大差值
+### 4.1 干扰答案策略
 
-class MathQuiz extends APJS.ScriptComponent {
+只有一个干扰项，它的质量直接决定游戏好不好玩。纯随机的问题是：要么差得离谱一眼排除，要么全靠蒙。所以这里按**真实的口算错误类型**来构造，让一部分题出现「两个答案看着都对」的犹豫感。
 
-    onStart() {
-        // 绑定的节点（检查器中拖拽赋值）：
-        //   this.questionSlots[9]  this.leftSlots[3]  this.rightSlots[3]   ← Sprite 槽位
-        //   this.scoreText  this.finalText                                 ← Text 组件
-        //   this.questionPanel  this.btnLeft  this.btnRight
-        //   this.scorePanel     this.finalPanel
-        // 绑定的贴图：
-        //   this.digitTextures[10]  this.texAdd  this.texSub
-        //   this.texEq  this.texQuestion
+| 策略 | 权重 | 效果 | 例子 |
+| ---- | ---- | ---- | ---- |
+| `far` | 40 | 差 6~22，一眼排除，给玩家喘息 | 78 → 95 |
+| `carry` | 20 | 差 ±10，**进位/借位错误**，最常见的真实失误 | 78 → 68 |
+| `unit` | 15 | 只改个位，十位对个位错 | 78 → 73 |
+| `near` | 15 | 差 ±1~3，**必须真算一遍**才能分辨 | 78 → 77 |
+| `swap` | 10 | 交换十位个位，视觉迷惑最强 | 78 → 87 |
 
-        this.questionIndex = 0;      // 已答题数
-        this.correctCount  = 0;      // 答对数
-        this.leftIsCorrect = false;  // 本题正确答案是否在左边
-        this.cd            = 0;      // 答题冷却剩余
-        this.resultTimer   = -1;     // 出下一题的倒计时，-1 表示未启动
-        this.finished      = false;  // 是否已结算
+权重写在 `WRONG_STRATEGIES` 常量里，不必凑成 100，代码按总和归一化。**想整体调难就加大 `near` / `swap`，想调简单就加大 `far`。**
 
-        this.finalPanel.enabled = false;
-        this.finalText.enabled  = false;
+实测 5 万次的难度分布：
 
-        this.updateScore();
-        this.newQuestion();
-    }
+| 差值 | 占比 |
+| ---- | ---- |
+| 1~3（极难） | 22.9% |
+| 10（进位错） | 21.9% |
+| 4~9 | 18.2% |
+| 11~22 | 30.2% |
+| >22 | 6.8% |
 
-    onUpdate(dt) {
-        if (this.finished) {
-            return;
-        }
+**约 45% 的题会让人犹豫**（差 1~3 与差 10 之和）。
 
-        // 答题冷却
-        if (this.cd > 0) {
-            this.cd -= dt;
-        }
+> `swap` 是**交换最后两位**，不是整串颠倒 —— 125 整串颠倒成 521，首位差太远反而一眼排除，失去迷惑性；交换末两位得 152，才是真的难分辨。
 
-        // 结果展示期：倒计时结束后出下一题或结算
-        if (this.resultTimer > 0) {
-            this.resultTimer -= dt;
-            if (this.resultTimer <= 0) {
-                this.resultTimer = -1;
-                if (this.questionIndex >= TOTAL_QUESTIONS) {
-                    this.showFinal();
-                } else {
-                    this.newQuestion();
-                }
-            }
-            return; // 展示结果期间不接受输入
-        }
+### 4.2 三条硬约束
 
-        // 摇头判定
-        const yaw = this.getFaceYaw();
-        if (yaw > YAW_THRESHOLD) {
-            this.checkAnswer(false);      // 头右转 → 选右
-        } else if (yaw < -YAW_THRESHOLD) {
-            this.checkAnswer(true);       // 头左转 → 选左
-        }
-    }
+干扰答案必须同时满足，否则会出致命显示问题：
 
-    // ---------- 渲染 ----------
+| 约束 | 不满足会怎样 |
+| ---- | ---- |
+| **非负** | 数字素材里没有负号，负数根本渲染不出来 |
+| **不等于正确答案** | 两个按钮显示同一个数，玩家怎么选都算错 |
+| **不超过 3 位** | 答案槽只有 3 个，装不下 |
 
-    /**
-     * 把一串贴图居中填进等宽槽位，多余的槽隐藏。
-     * 这是整套显示逻辑的核心：不改坐标，只改 texture 和 enabled。
-     */
-    renderSlots(slots, textures) {
-        const start = Math.floor((slots.length - textures.length) / 2);
-        for (let i = 0; i < slots.length; i++) {
-            const idx = i - start;
-            if (idx >= 0 && idx < textures.length) {
-                slots[i].texture = textures[idx];
-                slots[i].enabled = true;
-            } else {
-                slots[i].enabled = false;
-            }
-        }
-    }
+策略抽中后先校验，非法则**逐级回退**：原策略 → `far` → 只加不减的保底值。所以 `swap` 遇到个位数（7）或末两位相同的数（11、100）时直接返回 −1，让校验拒绝即可，不用在策略内部处理边界。
 
-    hideSlots(slots) {
-        for (let i = 0; i < slots.length; i++) {
-            slots[i].enabled = false;
-        }
-    }
-
-    /** 数字 → 逐位贴图数组，如 56 → [贴图5, 贴图6] */
-    numToTextures(n) {
-        const str = String(n);
-        const out = [];
-        for (let i = 0; i < str.length; i++) {
-            out.push(this.digitTextures[Number(str.charAt(i))]);
-        }
-        return out;
-    }
-
-    // ---------- 出题 ----------
-
-    randInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    /** 干扰答案：与正确值差 6~22，且不为负 */
-    makeWrongAnswer(correct) {
-        const offset = this.randInt(WRONG_MIN_GAP, WRONG_MAX_GAP);
-        let wrong = Math.random() > 0.5 ? correct + offset : correct - offset;
-        if (wrong < 0) {
-            wrong = correct + offset;  // 减出负数就改成加，避免出现没有素材的负号
-        }
-        return wrong;
-    }
-
-    newQuestion() {
-        const a = this.randInt(1, 100);
-        const b = this.randInt(1, 100);
-
-        let trueAns;
-        let chars;
-
-        if (Math.random() > 0.5) {
-            // 加法
-            trueAns = a + b;
-            chars = this.numToTextures(a)
-                .concat([this.texAdd])
-                .concat(this.numToTextures(b));
-        } else {
-            // 减法：大数减小数，保证非负
-            const big   = Math.max(a, b);
-            const small = Math.min(a, b);
-            trueAns = big - small;
-            chars = this.numToTextures(big)
-                .concat([this.texSub])
-                .concat(this.numToTextures(small));
-        }
-        chars = chars.concat([this.texEq, this.texQuestion]);
-        this.renderSlots(this.questionSlots, chars);
-
-        // 两个选项，正确答案随机落左或右
-        const wrong = this.makeWrongAnswer(trueAns);
-        this.leftIsCorrect = Math.random() > 0.5;
-
-        this.renderSlots(this.leftSlots,
-            this.numToTextures(this.leftIsCorrect ? trueAns : wrong));
-        this.renderSlots(this.rightSlots,
-            this.numToTextures(this.leftIsCorrect ? wrong : trueAns));
-
-        this.cd = ANSWER_COOLDOWN;
-    }
-
-    // ---------- 判题与结算 ----------
-
-    checkAnswer(pickLeft) {
-        if (this.finished || this.cd > 0 || this.resultTimer > 0) {
-            return; // 冷却中 / 正在展示结果 / 已结束，忽略输入
-        }
-
-        if (pickLeft === this.leftIsCorrect) {
-            this.correctCount++;
-        }
-        this.questionIndex++;
-        this.updateScore();
-
-        this.resultTimer = RESULT_DELAY;
-    }
-
-    /** 分数区：答对数 / 总题数，走 Text 组件 */
-    updateScore() {
-        this.scoreText.str = "分数：" + this.correctCount + "/" + TOTAL_QUESTIONS;
-    }
-
-    /** 结算：中间显示最终成绩，其余全部隐藏 */
-    showFinal() {
-        this.finished = true;
-
-        this.questionPanel.enabled = false;
-        this.btnLeft.enabled       = false;
-        this.btnRight.enabled      = false;
-        this.scorePanel.enabled    = false;
-        this.scoreText.enabled     = false;
-        this.hideSlots(this.questionSlots);
-        this.hideSlots(this.leftSlots);
-        this.hideSlots(this.rightSlots);
-
-        this.finalPanel.enabled = true;
-        this.finalText.enabled  = true;
-        this.finalText.str = this.correctCount + "/" + TOTAL_QUESTIONS;
-    }
-
-    /** 从人脸追踪组件读取头部 Yaw 角度（度）——具体 API 见第五章 */
-    getFaceYaw() {
-        // TODO: 接入人脸追踪的 Yaw 输出
-        return 0;
-    }
-}
-
-exports.MathQuiz = MathQuiz;
-```
-
-### 4.1 几处设计说明
+### 4.3 其他设计点
 
 | 点 | 说明 |
 | ---- | ---- |
-| **干扰答案防负数** | `makeWrongAnswer` 里 `correct - offset` 可能为负（如 `5-2=3`，offset=22 → −19）。数字素材没有负号，会直接显示不出来。所以为负时改成加法。 |
-| **`questionIndex` 在判题时自增** | 不是在出题时。这样 `questionIndex` 语义是「已答题数」，和 `TOTAL_QUESTIONS` 比较最直观。 |
+| **`questionIndex` 在判题时自增** | 不是在出题时。这样它的语义是「已答题数」，和 `TOTAL_QUESTIONS` 比较最直观。 |
 | **冷却与结果期分开** | `cd` 防的是刚出题时头还没回正就误触；`resultTimer` 防的是结果展示期间重复输入。两者都为 0 才接受摇头。 |
+| **Yaw 由外部注入** | 脚本不自己读人脸角度，而是暴露 `setYaw()` 由可视化节点每帧写入，见第五章。 |
 | **结算只隐藏组件不销毁** | 便于后续加「再来一局」，重置变量再 `enabled = true` 即可。 |
 
 ---
@@ -400,7 +236,11 @@ exports.MathQuiz = MathQuiz;
 | Yaw < −15° | 头部左转 | `checkAnswer(true)` 选左侧 |
 | 其余 | 未选择 | 无动作 |
 
-> ⚠️ `getFaceYaw()` 在脚本里是占位实现。人脸 Yaw 的具体读取 API 尚未在像塑运行时库中定位到确切签名 —— **建议用可视化的人脸追踪节点把 Yaw 接出来**，再传给脚本，比在脚本里硬找 API 稳妥。
+> ⚠️ **脚本不自己读人脸角度**，而是暴露 `setYaw(yaw)`，由可视化节点每帧调用写入。
+>
+> 像塑提供了两条路径 —— `effect.Amaz.FaceAction.HEAD_YAW` 动作枚举，以及人脸信息结构里的 `yaw` 角度字段 —— 但确切签名需真机实测。用可视化的人脸追踪节点把角度接出来再传进脚本最稳，也方便单独调试角度值。
+>
+> 脚本另留了 `debugPickLeft()` / `debugPickRight()`，不接人脸也能先把答题流程跑通。
 
 ### 5.2 调参对照
 
@@ -411,7 +251,8 @@ exports.MathQuiz = MathQuiz;
 | 想改题数 | `TOTAL_QUESTIONS` 10 → 5 |
 | 出题太快跟不上 | `ANSWER_COOLDOWN` 调大 |
 | 结果一闪而过 | `RESULT_DELAY` 调大 |
-| 干扰答案太好猜 | `WRONG_MIN_GAP` 调小（但别小于 5） |
+| 干扰答案太好猜 | 加大 `WRONG_STRATEGIES` 里 `near` / `swap` 的权重 |
+| 太难了总是选错 | 加大 `far` 的权重，或调小 `near` |
 
 ---
 
@@ -442,7 +283,7 @@ exports.MathQuiz = MathQuiz;
 
 - ❌ **`digitTextures` 拖拽顺序错了不会报错**，只会显示错数字 —— 绑完先逐个核对；
 - ❌ **摇头阈值别设太小**，人脸微动会造成连续误答，10 题瞬间跑完；
-- ❌ **干扰答案差值别小于 5**，太接近容易蒙对，失去练习意义；
+- ⚠️ **干扰答案「差 1~3」是故意的**，别当成 bug 调掉 —— 那是逼玩家真算一遍的设计，占比约 23%；
 - ❌ **素材别直接用 615×615 上线**，包体会撑爆 5 MB 限制；
 - ❌ **不要导入外部背景音乐**，用平台内置免费音效，规避版权驳回；
 - ✅ **减法必须大数减小数**，且干扰答案不能为负 —— 没有负号素材。

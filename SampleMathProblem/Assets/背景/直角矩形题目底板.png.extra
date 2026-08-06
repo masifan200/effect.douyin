@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "996fde4a-39ec-68a1-cf97-d146039b6413",
+      "a": "a16e89a0-c796-dca8-95d9-281f36415d6f",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "黑色半透明扁平分数底板",
+    "name": "直角矩形题目底板",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\黑色半透明扁平分数底板.png",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\直角矩形题目底板.png",
     "references": []
   }
 ]

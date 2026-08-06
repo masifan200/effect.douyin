@@ -19,8 +19,26 @@ const ANSWER_COOLDOWN = 2.0;  // 每题开始后的答题冷却（秒）
 const RESULT_DELAY    = 1.5;  // 答完停留多久出下一题（秒）
 const NUM_MIN         = 1;    // 随机数下限
 const NUM_MAX         = 100;  // 随机数上限
-const WRONG_MIN_GAP   = 6;    // 干扰答案与正确答案的最小差值
-const WRONG_MAX_GAP   = 22;   // 干扰答案与正确答案的最大差值
+const WRONG_MIN_GAP   = 6;    // far 策略的最小差值
+const WRONG_MAX_GAP   = 22;   // far 策略的最大差值
+const MAX_ANSWER      = 999;  // 答案上限，超过 3 位就装不进槽位了
+
+/**
+ * 干扰答案生成策略与权重。
+ *
+ * 不用纯随机 —— 那样要么一眼排除、要么全靠蒙。这里按**真实的口算错误类型**
+ * 来构造干扰项，让一部分题目出现「两个答案看着都对」的犹豫感。
+ *
+ * 权重可自由调整，不必凑成 100，代码按总和归一化。
+ * 想整体调难：加大 near / swap 的权重；想调简单：加大 far。
+ */
+const WRONG_STRATEGIES = [
+    { name: 'far',   weight: 40 },  // 差 6~22，一眼就能排除，给玩家喘息
+    { name: 'carry', weight: 20 },  // 差 ±10，进位/借位错误，最常见的真实失误
+    { name: 'unit',  weight: 15 },  // 只改个位，如 78 → 73，十位对个位错
+    { name: 'near',  weight: 15 },  // 差 ±1~3，非常接近，需要认真算
+    { name: 'swap',  weight: 10 },  // 十位个位颠倒，如 78 → 87，视觉迷惑最强
+];
 
 class MathQuiz extends APJS.ScriptComponent {
 
@@ -129,16 +147,101 @@ class MathQuiz extends APJS.ScriptComponent {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    /** 按权重抽一个干扰策略 */
+    pickStrategy() {
+        let total = 0;
+        for (let i = 0; i < WRONG_STRATEGIES.length; i++) {
+            total += WRONG_STRATEGIES[i].weight;
+        }
+        let r = Math.random() * total;
+        for (let i = 0; i < WRONG_STRATEGIES.length; i++) {
+            r -= WRONG_STRATEGIES[i].weight;
+            if (r <= 0) {
+                return WRONG_STRATEGIES[i].name;
+            }
+        }
+        return 'far';
+    }
+
     /**
-     * 干扰答案：与正确值相差 WRONG_MIN_GAP ~ WRONG_MAX_GAP，且不为负。
-     * 减法题结果可能很小（如 5-2=3），减去偏移会得到负数，
-     * 而数字素材里没有负号，所以为负时改走加法。
+     * 按指定策略生成一个候选干扰值。
+     * 可能返回非法值（负数、与正确答案相同、超出位数），由调用方校验后回退。
      */
+    applyStrategy(name, correct) {
+        switch (name) {
+            case 'near': {
+                // 差 1~3：必须真算一遍才能分辨
+                const d = this.randInt(1, 3);
+                return Math.random() > 0.5 ? correct + d : correct - d;
+            }
+            case 'carry': {
+                // 差 10：模拟进位/借位算错，如 56+22 答 68 而不是 78
+                return Math.random() > 0.5 ? correct + 10 : correct - 10;
+            }
+            case 'unit': {
+                // 十位保持不变，只改个位，如 78 → 73
+                const base = Math.floor(correct / 10) * 10;
+                const unit = correct % 10;
+                let newUnit = this.randInt(0, 9);
+                if (newUnit === unit) {
+                    newUnit = (unit + 1 + this.randInt(0, 8)) % 10;
+                }
+                return base + newUnit;
+            }
+            case 'swap': {
+                // 交换十位和个位，如 78 → 87、125 → 152。
+                //
+                // 注意是「交换最后两位」而不是「整串颠倒」：125 整串颠倒是 521，
+                // 首位差太远反而一眼就能排除，失去迷惑性。
+                //
+                // 个位数（无法交换）和末两位相同的数（11、100）返回 -1，
+                // 由校验拒绝后回退到 far。
+                const s = String(correct);
+                if (s.length < 2) {
+                    return -1;
+                }
+                const last2 = s.slice(-2);
+                if (last2.charAt(0) === last2.charAt(1)) {
+                    return -1;
+                }
+                return Number(s.slice(0, -2) + last2.charAt(1) + last2.charAt(0));
+            }
+            case 'far':
+            default: {
+                const offset = this.randInt(WRONG_MIN_GAP, WRONG_MAX_GAP);
+                return Math.random() > 0.5 ? correct + offset : correct - offset;
+            }
+        }
+    }
+
+    /**
+     * 干扰答案必须满足：
+     *   非负     —— 数字素材里没有负号，负数根本渲染不出来
+     *   不等于正确答案 —— 否则两个按钮显示同一个数，玩家怎么选都算错
+     *   不超过 3 位 —— 答案槽只有 3 个
+     */
+    isValidWrong(wrong, correct) {
+        return wrong >= 0 && wrong !== correct && wrong <= MAX_ANSWER;
+    }
+
+    /** 生成干扰答案：先按权重抽策略，非法则逐级回退，保证一定产出合法值 */
     makeWrongAnswer(correct) {
+        let wrong = this.applyStrategy(this.pickStrategy(), correct);
+        if (this.isValidWrong(wrong, correct)) {
+            return wrong;
+        }
+
+        // 一级回退：far 策略
+        wrong = this.applyStrategy('far', correct);
+        if (this.isValidWrong(wrong, correct)) {
+            return wrong;
+        }
+
+        // 二级保底：只加不减，且不会超上限
         const offset = this.randInt(WRONG_MIN_GAP, WRONG_MAX_GAP);
-        let wrong = Math.random() > 0.5 ? correct + offset : correct - offset;
-        if (wrong < 0) {
-            wrong = correct + offset;
+        wrong = correct + offset;
+        if (wrong > MAX_ANSWER) {
+            wrong = correct - offset;
         }
         return wrong;
     }

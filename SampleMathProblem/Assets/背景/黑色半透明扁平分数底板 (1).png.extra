@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "ea4d9934-e225-76ac-9b48-45a263bb02ae",
+      "a": "6b9619d4-4e6c-ab9f-34f6-556ca714b795",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "爱心",
+    "name": "黑色半透明扁平分数底板 (1)",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\爱心.png",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\黑色半透明扁平分数底板.png",
     "references": []
   }
 ]

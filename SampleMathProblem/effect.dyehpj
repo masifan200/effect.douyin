@@ -1,6 +1,6 @@
 {
   "name": "未命名",
-  "lastModified": "Wed, 05 Aug 2026 02:55:31 GMT",
+  "lastModified": "Thu, 06 Aug 2026 11:24:54 GMT",
   "version": "9.1.3",
   "toolName": "Douyin AR",
   "renderNames": {
@@ -69,9 +69,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 196341,
-  "durationCreation": 244132,
-  "durationBackground": 23,
+  "durationToCreate": 117159077,
+  "durationCreation": 28036209,
+  "durationBackground": 24067807,
   "effectHint": "",
   "templateID": "",
   "overwriteBuiltinGAN": 1,
@@ -87,15 +87,17 @@
   },
   "projectID": "a5ea1754-017b-d45a-b29b-d38304674b76",
   "isNewCreatedProject": true,
-  "preUpgradeVersion": "0.1.0",
+  "preUpgradeVersion": "9.1.3",
   "previewProjID": "22626223-bfec-4373-f08f-8b7b782688f2",
   "templateName": "",
   "soundStartTime": 0,
   "soundEndTime": 0,
   "LastVideoInput": {
     "type": "preview_face",
-    "name": "preview_single_blink||女",
-    "index": 0,
-    "resourceUrl": "C:\\Users\\电脑\\AppData\\Local\\DouyinAR\\Shared\\Resources\\PreviewResource\\video\\preview_face\\female\\female-blink.mp4"
-  }
+    "name": "preview_single_shake_head||女",
+    "index": 10,
+    "resourceUrl": "C:\\Users\\电脑\\AppData\\Local\\DouyinAR\\Shared\\Resources\\PreviewResource\\video\\preview_face\\female\\female-shake-head.mp4"
+  },
+  "selectedIdList": [],
+  "lastSceneView": 0
 }

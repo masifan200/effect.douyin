@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "2797c249-6a7c-852a-b3dd-12a1cf2b23a4",
+      "a": "779ad236-7b6f-dcdd-81c1-cb13c2d7f8fd",
       "b": ""
     },
     "extraType": "ResItemPNGImage",
-    "name": "矩形题目底板",
+    "name": "直角矩形题目底板 (1)",
     "version": "0.2.0",
     "rttiType": "Texture",
     "authorizationInfo": "",
@@ -26,7 +26,7 @@
     "wrapModeR": 0,
     "premultiplyAlpha": false,
     "objGuid": "",
-    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\矩形题目底板.png",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\直角矩形题目底板.png",
     "references": []
   }
 ]
