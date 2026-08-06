@@ -1,0 +1,93 @@
+%YAML 1.1
+--- !ScreenRenderTexture &1
+name: !<str> 人像抠图纹理
+guid: {a: 5562096906063225444, b: 7701069111287572156}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 4853458705782150952, b: 10465567256414752444}
+  properties:
+    __class: Map
+    JSClassName: !<str> SegmentationTextureProvider
+    _attachedMaterialPaths:
+      - !<str> material/5543165482564567135-15146368936655232385.material
+    _captureOrder: 0
+    _centerAlign: false
+    _comp_faceSeg_whichFace:
+      - 0
+      - 1
+    _earseg_whichface:
+      - 0
+      - 1
+    _eyeseg_whichface:
+      - 0
+    _graphName: !<str> AlSubGraph_Thu06Aug2026123353GMT804acac
+    _handseg_whichface:
+      - 0
+      - 1
+    _headseg_whichface:
+      - 0
+    _invertMask: false
+    _lipseg_whichface:
+      - 0
+    _petseg_whichface:
+      - 1
+    _screenMat: {localId: 1, path: 00000000-0000-0000-0000-00000000153F--00000000-0000-0000-0000-00000000153F.material}
+    _screenMat2Mask: {localId: 1, path: 00000000-0000-0000-0000-00000000153E--00000000-0000-0000-0000-00000000153E.material}
+    _segmentationType: 0
+    _smoothness: 1
+    _teethseg_whichface:
+      - 0
+width: 720
+height: 1280
+depth: 1
+internalFormat:
+  __class: InternalFormat
+  value: RGBA8
+dataType:
+  __class: DataType
+  value: U8norm
+builtinType:
+  __class: BuiltInTextureType
+  value: NORAML
+enableMipmap: false
+filterMin:
+  __class: FilterMode
+  value: LINEAR
+filterMag:
+  __class: FilterMode
+  value: LINEAR
+filterMipmap:
+  __class: FilterMipmapMode
+  value: NONE
+wrapModeS:
+  __class: WrapMode
+  value: CLAMP
+wrapModeT:
+  __class: WrapMode
+  value: CLAMP
+wrapModeR:
+  __class: WrapMode
+  value: CLAMP
+maxAnisotropy: 1
+inputKey: !<str> ""
+attachment:
+  __class: RenderTextureAttachment
+  value: NONE
+massMode:
+  __class: MSAAMode
+  value: NONE
+shared: false
+needInitData: false
+colorFormat:
+  __class: PixelFormat
+  value: RGBA8Unorm
+clearType:
+  __class: CameraClearType
+  value: TEXTURE
+clearColor: {r: 0, g: 0, b: 0, a: 1}
+pecentX: 1
+pecentY: 1
+sizeMode:
+  __class: ScreenTextureSizeMode
+  value: FOLLOW_SCREEN

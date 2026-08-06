@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "ae942c06-81a0-bc93-ef1b-4ce31ae9edf2",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "a5e3fbed72eb9dff224429d321a92acdd8e0f26e4bb3-LA1X5F",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "E:\\Project\\effect\\SampleMathProblem\\Assets\\花字\\纹理\\a5e3fbed72eb9dff224429d321a92acdd8e0f26e4bb3-LA1X5F.jpeg",
+    "references": []
+  }
+]

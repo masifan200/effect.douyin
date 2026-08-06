@@ -1,0 +1,132 @@
+[
+  {
+    "guid": {
+      "a": "ef1d16de-c069-24a5-750a-bf9830da127b",
+      "b": ""
+    },
+    "extraType": "ArtTextResItem",
+    "name": "花字",
+    "version": "0.1.0",
+    "rttiType": "ArtTextAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "letterFillMode": 1,
+    "letterColor": [
+      0.1328125,
+      0,
+      0.8500000238418579,
+      1
+    ],
+    "letterGradientQuality": 0,
+    "letterGradientColor1": [
+      0.0514322929084301,
+      0.02083333395421505,
+      1,
+      1
+    ],
+    "letterGradientColor2": [
+      0.10000000149011612,
+      0.3812499940395355,
+      1,
+      1
+    ],
+    "letterGradientColor3": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "letterGradientColorPos1": 0,
+    "letterGradientColorPos2": 1,
+    "letterGradientColorPos3": 0.5,
+    "letterGradientRangeMode": 1,
+    "letterGradientAngle": 90,
+    "textFillArea": 0,
+    "letterTextureScale": 1,
+    "letterTextureOffsetX": 0,
+    "letterTextureOffsetY": 0,
+    "letterTextureFlipX": false,
+    "letterTextureFlipY": false,
+    "letterTextureAlpha": 1,
+    "letterTextureAngle": 0,
+    "letterTextureRange": -1,
+    "letterAlpha": 1,
+    "outlineLayers": [
+      {
+        "_rtti": {
+          "handle": 2860887760
+        },
+        "_typedRtti": {
+          "handle": 2860887760
+        },
+        "_gradientQuality": 0,
+        "_gradientColor1": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColor2": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColor3": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColorPos1": 0,
+        "_gradientColorPos2": 1,
+        "_gradientColorPos3": 0.5
+      }
+    ],
+    "shadowLayers": [
+      {
+        "_rtti": {
+          "handle": 4212428318
+        },
+        "_typedRtti": {
+          "handle": 4212428318
+        },
+        "_gradientQuality": 0,
+        "_gradientColor1": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColor2": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColor3": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "_gradientColorPos1": 0,
+        "_gradientColorPos2": 1,
+        "_gradientColorPos3": 0.5
+      }
+    ],
+    "innerShadowLayers": [],
+    "fillTextureGuid": "",
+    "outlineTextureGuids": [],
+    "shadowTextureGuids": [],
+    "shadowOutlineTextureGuids": [],
+    "innerShadowTextureGuids": [],
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\AppData\\Local\\DouyinAR\\Instances\\Instance1\\EHpackage\\7483427726427242522\\花字.oart",
+    "references": []
+  }
+]

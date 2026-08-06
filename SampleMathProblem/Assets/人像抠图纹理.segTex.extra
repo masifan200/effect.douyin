@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "91b838d3-63d1-066f-94ca-3123692f6ff8",
+      "b": ""
+    },
+    "extraType": "ResItemSegmentationTexture",
+    "name": "人像抠图纹理",
+    "version": "0.1.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "resourceFilePath": "D:\\Users\\电脑\\AppData\\Local\\Douyin AR\\Plugins\\SegmentationTexture@1.0.20\\resources\\builtinAssets\\default.segTex",
+    "references": [
+      {
+        "guid": "00000000-0000-0000-0000-00000000153F",
+        "propertyName": "00000000-0000-0000-0000-00000000153F"
+      },
+      {
+        "guid": "00000000-0000-0000-0000-00000000153E",
+        "propertyName": "00000000-0000-0000-0000-00000000153E"
+      }
+    ]
+  }
+]
