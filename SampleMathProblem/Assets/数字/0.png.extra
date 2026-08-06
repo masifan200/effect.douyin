@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "31f8cc19-18bf-b640-4d88-e0a3977e0ff6",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "0",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\0.png",
+    "references": []
+  }
+]

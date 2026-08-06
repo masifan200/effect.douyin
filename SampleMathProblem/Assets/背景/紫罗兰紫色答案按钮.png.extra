@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "ae0010a3-6131-cda4-196c-ff4d225eec7e",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "紫罗兰紫色答案按钮",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\紫罗兰紫色答案按钮.png",
+    "references": []
+  }
+]

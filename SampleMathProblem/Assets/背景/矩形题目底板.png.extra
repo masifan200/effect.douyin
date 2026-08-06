@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "2797c249-6a7c-852a-b3dd-12a1cf2b23a4",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "矩形题目底板",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\矩形题目底板.png",
+    "references": []
+  }
+]

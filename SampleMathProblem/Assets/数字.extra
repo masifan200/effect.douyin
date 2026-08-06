@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "850ce4c9-2106-df6a-25bc-291720a16e08",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "未命名文件夹",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

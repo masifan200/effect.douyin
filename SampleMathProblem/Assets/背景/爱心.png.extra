@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "ea4d9934-e225-76ac-9b48-45a263bb02ae",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "爱心",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\电脑\\Downloads\\新建文件夹\\爱心.png",
+    "references": []
+  }
+]
