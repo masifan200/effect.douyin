@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "c1026c9a-a4d2-ce36-63b3-2933670d31b5",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "2",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "31323334353637383930313233343536:6ab3a8cb9977572b06931b0b9a8ebedadec22f63e737fcade41f72c235d54b6a",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "E:\\像塑\\特效\\测试2\\头像png\\_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=6011975657685720492&skey=@crypt_7e4ad558_33f1adeae1c151c1bd1056a29c44371b&mmweb_appid=wx_webfilehelper.png",
+    "references": []
+  }
+]

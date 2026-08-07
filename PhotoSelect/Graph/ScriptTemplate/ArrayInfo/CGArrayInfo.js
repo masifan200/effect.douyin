@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGArrayInfo=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGArrayInfo extends ScriptNodeAPI_1.BaseNode{getOutput(){const e=this.inputs[0]();return null==e?0:e.length}}exports.CGArrayInfo=CGArrayInfo;

@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "ecf82226-441d-b49e-8570-6e1733ade35e",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "四方形",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "31323334353637383930313233343536:d92ce7d22fb98281b6feac3ab1a960f0406f08eb52878e77c29101094b9a70a4",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\睡甲\\Desktop\\未命名.png",
+    "references": []
+  }
+]

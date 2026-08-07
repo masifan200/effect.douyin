@@ -1,0 +1,131 @@
+{
+	"name": "Index Generator",
+	"id": "ead0aa63-8df6-6f3c-d86b-b9b0051985f1",
+	"inputs": [
+		{
+			"name": "Enter",
+			"description": "The input that triggers this node",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_index_generator_input_enter",
+			"descriptionKey": "graph_index_generator_input_enter_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Reset",
+			"description": "Reset the current index logic",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_index_generator_input_reset",
+			"descriptionKey": "graph_index_generator_input_reset_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "From",
+			"description": "Minimum value of the index",
+			"type": "Int",
+			"displayType": "Number",
+			"range": [
+				[
+					0,
+					"inf",
+					1
+				]
+			],
+			"nameKey": "graph_index_generator_input_from",
+			"descriptionKey": "graph_index_generator_input_from_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "To",
+			"description": "Maximum value of the index",
+			"type": "Int",
+			"displayType": "Number",
+			"range": [
+				[
+					0,
+					"inf",
+					1
+				]
+			],
+			"nameKey": "graph_index_generator_input_to",
+			"descriptionKey": "graph_index_generator_input_to_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Mode",
+			"description": "\"Loop,\" \"Random,\" \"Shuffle\"",
+			"type": "String",
+			"value_list": [
+				"Loop",
+				"Random",
+				"Shuffle"
+			],
+			"displayType": "String",
+			"nameKey": "graph_index_generator_input_mode",
+			"descriptionKey": "graph_index_generator_input_mode_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_index_generator_input_mode_valueList_loop",
+				"graph_index_generator_input_mode_valueList_random",
+				"graph_index_generator_input_mode_valueList_shuffle"
+			]
+		},
+		{
+			"name": "Loop Count",
+			"description": "Number of cycles",
+			"type": "Int",
+			"displayType": "Number",
+			"default_value": "-1",
+			"nameKey": "graph_index_generator_input_loopcount",
+			"descriptionKey": "graph_index_generator_input_loopcount_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Ping-pong",
+			"description": "When selected, it outputs the set of numbers from the starting value to end value and then backwards",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"default_value": false,
+			"nameKey": "graph_index_generator_input_pingpong",
+			"descriptionKey": "graph_index_generator_input_pingpong_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"description": "Execute the next node",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_index_generator_output_next",
+			"descriptionKey": "graph_index_generator_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Index",
+			"description": "The output index in between \"From\" and \"To\"",
+			"type": "Double",
+			"displayType": "Number",
+			"nameKey": "graph_index_generator_output_index",
+			"descriptionKey": "graph_index_generator_output_index_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"category": "Utility",
+	"version": "2.0.0",
+	"description": "Outputs a set of numbers within a predefined range. Use Loop mode to cycle through the set based on the Loop Count; Random mode to output randomized values (may repeat); and Shuffle mode to output all values once (no repetition) in random order.",
+	"onlineWebsite": "graph_index_generator_website",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nodeEvent": [
+		"resetOnRecord"
+	],
+	"js": "CGIndexGenerator.js",
+	"nameKey": "graph_index_generator_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_index_generator_description"
+}

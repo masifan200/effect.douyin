@@ -1,0 +1,25 @@
+[
+  {
+    "guid": {
+      "a": "b316dab9-c85c-06ab-ac6e-1e66cd8ab76d",
+      "b": ""
+    },
+    "extraType": "JSAssetFaceOcclusion",
+    "name": "脸部遮罩纹理",
+    "version": "0.1.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "31323334353637383930313233343536:d92ce7d22fb98281b6feac3ab1a960f0406f08eb52878e77c29101094b9a70a4",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [
+      {
+        "guid": "00000000-0000-0000-0000-000000000224",
+        "propertyName": "JSAssetBaseReference_0"
+      }
+    ]
+  }
+]
