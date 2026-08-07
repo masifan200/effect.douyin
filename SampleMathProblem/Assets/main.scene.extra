@@ -401,7 +401,7 @@
     "name": "2D 摄像机",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": true,
+    "expanded": false,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -466,7 +466,7 @@
     "name": "选择题",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -959,7 +959,7 @@
     "version": "0.1.0",
     "rttiType": "ScreenTransform",
     "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
+    "_lazyUpgrateVersion": "0.1.0",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "expanded": true
@@ -968,38 +968,6 @@
     "verticalConstraint": 2,
     "linkageScale": 1,
     "linkageSize": 0
-  },
-  {
-    "guid": {
-      "a": "2129b44d-5ae4-de7b-bf47-f3da11c9761a",
-      "b": ""
-    },
-    "objGuid": "Guid(4957044580915779298, 16641678326030414755)",
-    "extraType": "Image",
-    "name": "图片",
-    "version": "0.1.0",
-    "rttiType": "Image",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.1.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true,
-      "[object Object]_show_d6d434e2-79b4-7cc7-9d4f-415558918e69": false
-    },
-    "sharedMaterial": "00000000-0000-0000-0000-000000000132",
-    "segBlendMode": "Normal_v2",
-    "segRadius": 0.5,
-    "segSoftness": 0.5,
-    "blendMode": "Normal",
-    "sizeMode": 1,
-    "isScreenImage": true,
-    "drawMode": "Normal",
-    "filledType": 0,
-    "startPoint": 0,
-    "filledRange": 1,
-    "ellipseX": 1,
-    "ellipseY": 1,
-    "alphaNOPM": true
   },
   {
     "guid": {
@@ -1248,7 +1216,7 @@
     "version": "0.1.0",
     "rttiType": "ScreenTransform",
     "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
+    "_lazyUpgrateVersion": "0.1.0",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "expanded": true
@@ -1257,37 +1225,6 @@
     "verticalConstraint": 2,
     "linkageScale": 1,
     "linkageSize": 0
-  },
-  {
-    "guid": {
-      "a": "4687f49b-13e9-0c1d-575b-187078e7d0f0",
-      "b": ""
-    },
-    "objGuid": "Guid(5697801421736033392, 5562566587860540332)",
-    "extraType": "Image",
-    "name": "图片",
-    "version": "0.1.0",
-    "rttiType": "Image",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.1.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "sharedMaterial": "00000000-0000-0000-0000-000000000132",
-    "segBlendMode": "Normal_v2",
-    "segRadius": 0.5,
-    "segSoftness": 0.5,
-    "blendMode": "Normal",
-    "sizeMode": 1,
-    "isScreenImage": true,
-    "drawMode": "Normal",
-    "filledType": 0,
-    "startPoint": 0,
-    "filledRange": 1,
-    "ellipseX": 1,
-    "ellipseY": 1,
-    "alphaNOPM": true
   },
   {
     "guid": {
@@ -1845,7 +1782,7 @@
     "version": "1.1.0",
     "rttiType": "Text",
     "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
+    "_lazyUpgrateVersion": "1.1.0",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "expanded": true
@@ -1926,5 +1863,66 @@
     "sortMethod": 1,
     "enableInputTexture": false,
     "inputTexture": "00000000-0000-0000-0000-00000000004b"
+  },
+  {
+    "guid": {
+      "a": "366809ae-7e10-b1c6-9371-93e818f3c4bd",
+      "b": ""
+    },
+    "objGuid": "Guid(4706024832568924559, 17303935785047165621)",
+    "extraType": "Text2D",
+    "name": "文字",
+    "version": "1.1.0",
+    "rttiType": "Text",
+    "editable": true,
+    "_lazyUpgrateVersion": "1.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true,
+      "allExpanded": true
+    },
+    "artTextDropdown": "7483427726427439130",
+    "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
+    "boxDimension": 2,
+    "totalAnimationTime": 0,
+    "inAnimationAssetID": "",
+    "loopAnimationAssetID": "",
+    "outAnimationAssetID": "",
+    "inAnimationDuration": 0,
+    "loopAnimationDuration": 0,
+    "outAnimationDuration": 0,
+    "userEditable": false,
+    "maxInputWords": 0,
+    "templateId": ""
+  },
+  {
+    "guid": {
+      "a": "92cffde1-ade8-3ac9-0524-d0d394d438a1",
+      "b": ""
+    },
+    "objGuid": "Guid(4846556965779036151, 4582100466301663160)",
+    "extraType": "Text2D",
+    "name": "文字",
+    "version": "1.1.0",
+    "rttiType": "Text",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "artTextDropdown": "7483427726427439130",
+    "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
+    "boxDimension": 2,
+    "totalAnimationTime": 0,
+    "inAnimationAssetID": "",
+    "loopAnimationAssetID": "",
+    "outAnimationAssetID": "",
+    "inAnimationDuration": 0,
+    "loopAnimationDuration": 0,
+    "outAnimationDuration": 0,
+    "userEditable": false,
+    "maxInputWords": 0,
+    "templateId": ""
   }
 ]
