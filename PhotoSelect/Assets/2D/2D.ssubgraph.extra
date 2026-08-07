@@ -14,7 +14,52 @@
       "expandInPanel": false
     },
     "objGuid": "",
-    "references": [],
+    "references": [
+      {
+        "guid": "e11cc497-2bef-0e65-bd76-547499a22bfd",
+        "propertyName": "SubgraphReference_0"
+      },
+      {
+        "guid": "c1026c9a-a4d2-ce36-63b3-2933670d31b5",
+        "propertyName": "SubgraphReference_1"
+      },
+      {
+        "guid": "56d9268f-f428-6777-ac24-e507a17d1d00",
+        "propertyName": "SubgraphReference_2"
+      },
+      {
+        "guid": "b081f2a1-16f6-9d62-7c01-b9005ee4b588",
+        "propertyName": "SubgraphReference_3"
+      },
+      {
+        "guid": "01a7e52e-ff89-c5dc-4166-c003b7937356",
+        "propertyName": "SubgraphReference_4"
+      },
+      {
+        "guid": "3a3914a6-5c34-e3a2-f5d5-0f780d2583a0",
+        "propertyName": "SubgraphReference_5"
+      },
+      {
+        "guid": "62e11316-0559-8fd2-424b-0ecc13634500",
+        "propertyName": "SubgraphReference_6"
+      },
+      {
+        "guid": "ec6f9774-fb71-0f43-b745-a40334d7c6dc",
+        "propertyName": "SubgraphReference_7"
+      },
+      {
+        "guid": "5466da96-8b52-4d62-0d19-1976ab222ef2",
+        "propertyName": "SubgraphReference_8"
+      },
+      {
+        "guid": "6edb250d-1663-cccb-22b2-13a0cc9385d3",
+        "propertyName": "SubgraphReference_9"
+      },
+      {
+        "guid": "99fb8088-fded-da04-b202-58b49c880121",
+        "propertyName": "SubgraphReference_10"
+      }
+    ],
     "combinedWithNodeLibary": false,
     "initGraphIdentity": ""
   }
