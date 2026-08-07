@@ -52,17 +52,9 @@ const WRONG_STRATEGIES = [
 class MathQuiz extends APJS.ScriptComponent {
 
     onStart() {
-        // ---- 绑定清单（检查器中拖拽赋值）----
-        // 文字组件：
-        //   this.questionText  题目 > 前色 > 题目
-        //   this.leftText      左 > 前 > 内容-左
-        //   this.rightText     右 > 内容-右
-        //   this.resultText    结果
-        // 图片组件（选中边框，用 color 染红绿）：
-        //   this.leftBox       内容-左 > 选中
-        //   this.rightBox      内容-右 > 选中
-        // 头部节点（读摇头角度）：
-        //   this.headNode      特效 > 3D 跟踪头模
+        // 节点自动按名字查找，无需在检查器里逐个拖拽绑定。
+        // 若已手动绑定同名属性，则优先使用绑定值。
+        this.autoBind();
 
         this.questionIndex = 0;      // 已答题数
         this.correctCount  = 0;      // 答对数
@@ -117,6 +109,76 @@ class MathQuiz extends APJS.ScriptComponent {
         } else if (yaw >= YAW_LEFT_MIN && yaw <= YAW_LEFT_MAX) {
             this.locked = true;
             this.checkAnswer(true);       // 头左转 → 选左
+        }
+    }
+
+    // ---------------- 自动绑定 ----------------
+
+    /** 取当前场景，几种可能的访问路径都试一遍 */
+    getScene() {
+        return this.scene
+            || (this.entity && this.entity.scene)
+            || (this.sceneObject && this.sceneObject.scene)
+            || null;
+    }
+
+    /** 按名字找场景对象，可限定父节点（同名的「选中」靠这个区分） */
+    find(name, parent) {
+        const scene = this.getScene();
+        if (!scene || !scene.findSceneObject) { return null; }
+        try {
+            return parent ? scene.findSceneObject(name, parent) : scene.findSceneObject(name);
+        } catch (err) {
+            return null;
+        }
+    }
+
+    /** 取节点上的组件，失败返回 null */
+    comp(node, type) {
+        if (!node || !node.getComponent) { return null; }
+        try { return node.getComponent(type); } catch (err) { return null; }
+    }
+
+    /**
+     * 自动查找所有需要的节点。
+     * 场景层级：
+     *   选择题 > 题目 > 前色 > 题目(Text)
+     *          > 左 > 前 > 内容-左(Text) > 选中(ImageRenderer)
+     *          > 右 > 内容-右(Text) > 选中(ImageRenderer)
+     *   结果(Text)   特效 > 3D 跟踪头模
+     */
+    autoBind() {
+        const nLeft  = this.find('内容-左');
+        const nRight = this.find('内容-右');
+
+        if (!this.questionText) {
+            // 「题目」既是容器名也是文字节点名，从「前色」下面找更准
+            const front = this.find('前色');
+            const nTitle = this.find('题目', front) || this.find('题目');
+            this.questionText = this.comp(nTitle, 'Text');
+        }
+        if (!this.leftText)   { this.leftText   = this.comp(nLeft,  'Text'); }
+        if (!this.rightText)  { this.rightText  = this.comp(nRight, 'Text'); }
+        if (!this.resultText) { this.resultText = this.comp(this.find('结果'), 'Text'); }
+
+        // 两个「选中」同名，必须限定父节点
+        if (!this.leftBox)  { this.leftBox  = this.comp(this.find('选中', nLeft),  'ImageRenderer'); }
+        if (!this.rightBox) { this.rightBox = this.comp(this.find('选中', nRight), 'ImageRenderer'); }
+
+        if (!this.headNode) { this.headNode = this.find('3D 跟踪头模'); }
+
+        const missing = [];
+        if (!this.questionText) { missing.push('题目文本'); }
+        if (!this.leftText)     { missing.push('内容-左'); }
+        if (!this.rightText)    { missing.push('内容-右'); }
+        if (!this.resultText)   { missing.push('结果'); }
+        if (!this.leftBox)      { missing.push('左选中框'); }
+        if (!this.rightBox)     { missing.push('右选中框'); }
+        if (!this.headNode)     { missing.push('3D 跟踪头模'); }
+        if (missing.length) {
+            console.log('[MathQuiz] 未找到：' + missing.join('、') + ' —— 请在检查器手动绑定这几项');
+        } else {
+            console.log('[MathQuiz] 全部节点自动绑定成功');
         }
     }
 
