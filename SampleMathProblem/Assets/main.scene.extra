@@ -466,7 +466,7 @@
     "name": "选择题",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": false,
+    "expanded": true,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",

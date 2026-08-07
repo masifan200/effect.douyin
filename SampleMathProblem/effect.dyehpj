@@ -1,6 +1,6 @@
 {
   "name": "未命名",
-  "lastModified": "Fri, 07 Aug 2026 06:44:15 GMT",
+  "lastModified": "Fri, 07 Aug 2026 07:15:33 GMT",
   "version": "9.1.3",
   "toolName": "Douyin AR",
   "renderNames": {
@@ -69,9 +69,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 49607867688,
-  "durationCreation": 34010438,
-  "durationBackground": 10246285,
+  "durationToCreate": 49609745360,
+  "durationCreation": 35888110,
+  "durationBackground": 11936297,
   "effectHint": "",
   "overwriteBuiltinGAN": 1,
   "overwriteBuiltinFilter": 1,
@@ -92,7 +92,9 @@
     "index": 0,
     "resourceUrl": ""
   },
-  "selectedIdList": [],
+  "selectedIdList": [
+    "amz:Guid(5039724035053194623, 8076094848796077216)"
+  ],
   "lastSceneView": 0,
   "perfTested": true,
   "effectSize": 2220587,
