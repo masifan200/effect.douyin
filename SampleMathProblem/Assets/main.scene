@@ -297,11 +297,11 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        activeTextStyle: {localId: 29}
+        activeTextStyle: {localId: 30}
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5425772196865469267, b: 13890488819833848492}
+            guid: {a: 4835649873281985618, b: 3407029951137314729}
             utf8: !<str> 9
             initialPosition: {x: -1860.938, y: 6.25}
             position: {x: -1860.938, y: 6.25}
@@ -310,10 +310,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5037315944663488717, b: 17105999706129228955}
+            guid: {a: 4937695851912994023, b: 6990371397269270661}
             utf8: !<str> 9
             initialPosition: {x: -1277.604, y: 6.25}
             position: {x: -1277.604, y: 6.25}
@@ -322,10 +322,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4970181994107135107, b: 6646746100747578018}
+            guid: {a: 5704192939502061708, b: 18029164137290151088}
             utf8: !<str> +
             initialPosition: {x: -624.4791, y: -21.35413}
             position: {x: -624.4791, y: -21.35413}
@@ -334,10 +334,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5720883385408913276, b: 15486823982831563151}
+            guid: {a: 4747293222555259396, b: 16390609107953106314}
             utf8: !<str> 9
             initialPosition: {x: 18.22906, y: 6.25}
             position: {x: 18.22906, y: 6.25}
@@ -346,10 +346,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4814108053923477488, b: 6779224141141312178}
+            guid: {a: 5078379810950838525, b: 15871605271987184551}
             utf8: !<str> 9
             initialPosition: {x: 601.5626, y: 6.25}
             position: {x: 601.5626, y: 6.25}
@@ -358,10 +358,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5249139400514420370, b: 10519509608708749241}
+            guid: {a: 4746498111261732226, b: 7350906759213565831}
             utf8: !<str> =
             initialPosition: {x: 1254.688, y: -20.83334}
             position: {x: 1254.688, y: -20.83334}
@@ -370,10 +370,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5380445815658670367, b: 18229638525606246288}
+            guid: {a: 4968848200964424948, b: 9647018281073658807}
             utf8: !<str> "?"
             initialPosition: {x: 1876.564, y: 6.25}
             position: {x: 1876.564, y: 6.25}
@@ -382,12 +382,12 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 29}
+            letterStyle: {localId: 30}
         str: !<str> 99+99=?
         richStr: !<str> 99+99=?
-        typeSettingParam: {localId: 32}
-        canvas: {localId: 33}
-        globalBackground: {localId: 34}
+        typeSettingParam: {localId: 33}
+        canvas: {localId: 34}
+        globalBackground: {localId: 35}
         textLocale:
           __class: TextLocale
           value: LTRLocale
@@ -564,11 +564,11 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        activeTextStyle: {localId: 35}
+        activeTextStyle: {localId: 36}
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4715186861612318047, b: 13690888792712207766}
+            guid: {a: 5198907375790982901, b: 6177433016984462782}
             utf8: !<str> 1
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
@@ -577,12 +577,12 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 35}
+            letterStyle: {localId: 36}
         str: !<str> 1
         richStr: !<str> 1
-        typeSettingParam: {localId: 39}
-        canvas: {localId: 40}
-        globalBackground: {localId: 41}
+        typeSettingParam: {localId: 40}
+        canvas: {localId: 41}
+        globalBackground: {localId: 42}
         textLocale:
           __class: TextLocale
           value: LTRLocale
@@ -851,11 +851,11 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        activeTextStyle: {localId: 42}
+        activeTextStyle: {localId: 43}
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5659592099442701748, b: 1563436704909018301}
+            guid: {a: 5530760554025295342, b: 16462916567820442507}
             utf8: !<str> 1
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
@@ -864,12 +864,12 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 42}
+            letterStyle: {localId: 43}
         str: !<str> 1
         richStr: !<str> 1
-        typeSettingParam: {localId: 46}
-        canvas: {localId: 47}
-        globalBackground: {localId: 48}
+        typeSettingParam: {localId: 47}
+        canvas: {localId: 48}
+        globalBackground: {localId: 49}
         textLocale:
           __class: TextLocale
           value: LTRLocale
@@ -1134,7 +1134,7 @@ entities:
         zFar: 1000
         renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
         isRootCamera: false
-        maskMaterial: {localId: 1, path: e852c74d-39fd-f6e5-dfb2-acc9a579cd91--e852c74d-39fd-f6e5-dfb2-acc9a579cd91.material}
+        maskMaterial: {localId: 1, path: 350a16d2-a657-9aa8-337f-8f4da2e08cd6--350a16d2-a657-9aa8-337f-8f4da2e08cd6.material}
         sortMethod:
           __class: CameraSortMethod
           value: STRICT_SORT_ORDER
@@ -1165,7 +1165,7 @@ entities:
             enableCustomBindingInput: false
             faceFittingFOV: 60
             faceIndex: 0
-            graphName: !<str> AlSubGraph_Fri07Aug2026064409GMT134m7y8
+            graphName: !<str> AlSubGraph_Fri07Aug2026073240GMT8072c3f
         enabled: true
         className: !<str> FaceBinding
       - __class: MeshRenderer
@@ -1192,11 +1192,11 @@ entities:
         properties:
           __class: Map
           OutputRT: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
-          algoGraphName: !<str> AlSubGraph_Fri07Aug2026064409GMT135qwx3
+          algoGraphName: !<str> AlSubGraph_Fri07Aug2026073240GMT807hah2
           extraType: !<str> FaceFitting3DJS
           faceIds: [0, 1]
           femaleIntensity: 1
-          graphName: !<str> AlSubGraph_Fri07Aug2026064409GMT135qwx3
+          graphName: !<str> AlSubGraph_Fri07Aug2026073240GMT807hah2
           intensity: 1
           maleIntensity: 1
           mirror: false
@@ -1247,11 +1247,11 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        activeTextStyle: {localId: 49}
+        activeTextStyle: {localId: 50}
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5095948932430901557, b: 7773525104298583442}
+            guid: {a: 4823648099120859329, b: 17541060273344280709}
             utf8: !<str> 左
             initialPosition: {x: -6084.202, y: 26.04163}
             position: {x: -6084.202, y: 26.04163}
@@ -1260,10 +1260,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4845652521567130515, b: 7945107350095275942}
+            guid: {a: 4641558062475650620, b: 16210484473971026847}
             utf8: !<str> 右
             initialPosition: {x: -4348.091, y: 17.36108}
             position: {x: -4348.091, y: 17.36108}
@@ -1272,10 +1272,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5726299113515863607, b: 13289180922352946349}
+            guid: {a: 5309628776300135819, b: 3270475396390340739}
             utf8: !<str> 摇
             initialPosition: {x: -2629.341, y: 3.47229}
             position: {x: -2629.341, y: 3.47229}
@@ -1284,10 +1284,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4715430319435171533, b: 3354531500516901001}
+            guid: {a: 5355721458351159230, b: 2537300875973852054}
             utf8: !<str> 头
             initialPosition: {x: -864.5835, y: 0}
             position: {x: -864.5835, y: 0}
@@ -1296,10 +1296,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5287349191150355289, b: 6942623084748435615}
+            guid: {a: 5710790379262709797, b: 8344262243594104221}
             utf8: !<str> 进
             initialPosition: {x: 867.1875, y: -3.472168}
             position: {x: 867.1875, y: -3.472168}
@@ -1308,10 +1308,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5046803808056461467, b: 9258128805159756687}
+            guid: {a: 5593249326875000911, b: 4887867459031978901}
             utf8: !<str> 行
             initialPosition: {x: 2592.882, y: -5.208252}
             position: {x: 2592.882, y: -5.208252}
@@ -1320,10 +1320,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5014269885334151138, b: 2353767979525026465}
+            guid: {a: 5738550916965436347, b: 1257257704959644315}
             utf8: !<str> 选
             initialPosition: {x: 4340.278, y: -4.34021}
             position: {x: 4340.278, y: -4.34021}
@@ -1332,10 +1332,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5700489973990269606, b: 17517748215303528320}
+            guid: {a: 5281096100916349943, b: 13725652299751604866}
             utf8: !<str> 择
             initialPosition: {x: 6066.84, y: 0.868042}
             position: {x: 6066.84, y: 0.868042}
@@ -1344,12 +1344,12 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 49}
+            letterStyle: {localId: 50}
         str: !<str> 左右摇头进行选择
         richStr: !<str> 左右摇头进行选择
-        typeSettingParam: {localId: 53}
-        canvas: {localId: 54}
-        globalBackground: {localId: 55}
+        typeSettingParam: {localId: 54}
+        canvas: {localId: 55}
+        globalBackground: {localId: 56}
         textLocale:
           __class: TextLocale
           value: LTRLocale
@@ -1532,7 +1532,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 57}
+      - {localId: 29}
       - __class: Text
         name: !<str> ""
         guid: {a: 4809202211536185422, b: 2795402550609078450}
@@ -1572,11 +1572,11 @@ entities:
           __class: LightProbeBlendMode
           value: OFF
         entirePingPong: false
-        activeTextStyle: {localId: 58}
+        activeTextStyle: {localId: 57}
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5121422686520169848, b: 11805849477351403692}
+            guid: {a: 5204887024190090387, b: 6943973979001785521}
             utf8: !<str> 最
             initialPosition: {x: -4462.5, y: -16.66669}
             position: {x: -4462.5, y: -16.66669}
@@ -1585,10 +1585,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4703321752983204503, b: 8387029662986363019}
+            guid: {a: 4661280799468641599, b: 15672647729925272206}
             utf8: !<str> 终
             initialPosition: {x: -3072.222, y: -4.861206}
             position: {x: -3072.222, y: -4.861206}
@@ -1597,10 +1597,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5213076755613748801, b: 13896897459503305906}
+            guid: {a: 4824484045413554763, b: 13772987859475233682}
             utf8: !<str> 得
             initialPosition: {x: -1696.527, y: -13.88898}
             position: {x: -1696.527, y: -13.88898}
@@ -1609,10 +1609,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5006843551571554003, b: 8513052997283604898}
+            guid: {a: 4712594867778802607, b: 6994309512176380549}
             utf8: !<str> 分
             initialPosition: {x: -308.3331, y: 5.555542}
             position: {x: -308.3331, y: 5.555542}
@@ -1621,10 +1621,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5728410676709846933, b: 1843879337303891111}
+            guid: {a: 4816720715083874283, b: 13971487669668550789}
             utf8: !<str> ：
             initialPosition: {x: 739.5836, y: -152.7778}
             position: {x: 739.5836, y: -152.7778}
@@ -1633,10 +1633,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5636657085451448031, b: 8589485145296794498}
+            guid: {a: 5203910501215526011, b: 9407782927407761025}
             utf8: !<str> 1
             initialPosition: {x: 2013.89, y: 0}
             position: {x: 2013.89, y: 0}
@@ -1645,10 +1645,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5527502864928224850, b: 10251719318554391487}
+            guid: {a: 4710999215395855941, b: 8263950577462278584}
             utf8: !<str> 0
             initialPosition: {x: 2763.89, y: -6.103516e-05}
             position: {x: 2763.89, y: -6.103516e-05}
@@ -1657,10 +1657,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4922494555000822249, b: 15161788590928172972}
+            guid: {a: 5556938214118559239, b: 13929765696534890402}
             utf8: !<str> /
             initialPosition: {x: 3472.223, y: 0.694458}
             position: {x: 3472.223, y: 0.694458}
@@ -1669,10 +1669,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4939356321121096384, b: 6925675721852802998}
+            guid: {a: 4678108716236672377, b: 11270000780651766913}
             utf8: !<str> 1
             initialPosition: {x: 4006.945, y: 0}
             position: {x: 4006.945, y: 0}
@@ -1681,10 +1681,10 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5169271494303320998, b: 13924704722713490602}
+            guid: {a: 5574436113894180616, b: 152366326563357834}
             utf8: !<str> 0
             initialPosition: {x: 4756.945, y: -6.103516e-05}
             position: {x: 4756.945, y: -6.103516e-05}
@@ -1693,7 +1693,7 @@ entities:
             anchor: {x: 0, y: 0}
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
-            letterStyle: {localId: 58}
+            letterStyle: {localId: 57}
         str: !<str> 最终得分：10/10
         richStr: !<str> 最终得分：10/10
         typeSettingParam: {localId: 61}
@@ -1826,7 +1826,7 @@ parent: {localId: 8}
 children:
   - {localId: 9}
   - {localId: 28}
-  - {localId: 57}
+  - {localId: 29}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -2211,7 +2211,24 @@ pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
 enablePivotMatrix: true
---- !LetterStyle &29
+--- !ScreenTransform &29
+name: !<str> ""
+guid: {a: 5460008909017461045, b: 16956637847174328729}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: true
+--- !LetterStyle &30
 name: !<str> ""
 guid: {a: 4874445341602739582, b: 3436758041337358776}
 version: 101
@@ -2229,16 +2246,16 @@ fontDecoration:
   value: NONE
 decorationWidth: 0.03999999910593033
 decorationOffset: 0.1500000059604645
-fill: {localId: 30}
+fill: {localId: 31}
 effectStyleId: !<str> ""
 effectStylePath: !<str> ""
 effectStyleParams: !<str> ""
 innerShadows:
-  - {localId: 31}
+  - {localId: 32}
 letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
 letterBgAlpha: 0
 selected: false
---- !LetterStyleLayer &30
+--- !LetterStyleLayer &31
 name: !<str> ""
 guid: {a: 4921871774231814437, b: 17647008680379140252}
 serializedProperty:
@@ -2292,7 +2309,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &31
+--- !LetterStyleLayer &32
 name: !<str> ""
 guid: {a: 5303218054497570664, b: 14273199550849645201}
 serializedProperty:
@@ -2346,7 +2363,7 @@ shadowDistance: 0.05000000074505806
 shadowAngle: -30
 shadowFeather: 0
 shadowDiffuse: -1
---- !TextTypeSettingParam &32
+--- !TextTypeSettingParam &33
 name: !<str> ""
 guid: {a: 5025768742186348769, b: 1074211759975539861}
 textAdaptiveCanvasEnabled: false
@@ -2399,7 +2416,7 @@ layoutMode:
   __class: LayoutMode
   value: AutoWidth
 autoLayoutMaxHeight: -1
---- !TextCanvas &33
+--- !TextCanvas &34
 name: !<str> ""
 guid: {a: 5568596787408213585, b: 10482326016928657289}
 textRect: {x: -7200, y: -520.8334, w: 14400, h: 1041.667}
@@ -2420,7 +2437,7 @@ canvasStyle:
   __class: CanvasStyle
   value: BoundingBox
 pixelTextRect: {x: -7200, y: -520.8334, w: 14400, h: 1041.667}
---- !TextBackground &34
+--- !TextBackground &35
 name: !<str> ""
 guid: {a: 5531546513102844633, b: 10424259960101791383}
 enabled: true
@@ -2461,7 +2478,7 @@ gradientAngle: 90
 gradientStyle:
   __class: GradientStyle
   value: Linear
---- !LetterStyle &35
+--- !LetterStyle &36
 name: !<str> ""
 guid: {a: 4643102479009874740, b: 14081452776572483753}
 version: 101
@@ -2479,18 +2496,18 @@ fontDecoration:
   value: NONE
 decorationWidth: 0.03999999910593033
 decorationOffset: 0.1500000059604645
-fill: {localId: 36}
+fill: {localId: 37}
 strokes:
-  - {localId: 37}
+  - {localId: 38}
 effectStyleId: !<str> ""
 effectStylePath: !<str> ""
 effectStyleParams: !<str> ""
 innerShadows:
-  - {localId: 38}
+  - {localId: 39}
 letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
 letterBgAlpha: 0
 selected: false
---- !LetterStyleLayer &36
+--- !LetterStyleLayer &37
 name: !<str> ""
 guid: {a: 4630051439184092495, b: 4471696609553897377}
 serializedProperty:
@@ -2544,7 +2561,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &37
+--- !LetterStyleLayer &38
 name: !<str> ""
 guid: {a: 5421562331214734402, b: 3771549998746789015}
 serializedProperty:
@@ -2596,7 +2613,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &38
+--- !LetterStyleLayer &39
 name: !<str> ""
 guid: {a: 5521734190642634051, b: 2882467138200085642}
 serializedProperty:
@@ -2650,7 +2667,7 @@ shadowDistance: 0.05000000074505806
 shadowAngle: -30
 shadowFeather: 0
 shadowDiffuse: -1
---- !TextTypeSettingParam &39
+--- !TextTypeSettingParam &40
 name: !<str> ""
 guid: {a: 4693389854849685286, b: 5506455176323666571}
 textAdaptiveCanvasEnabled: false
@@ -2703,7 +2720,7 @@ layoutMode:
   __class: LayoutMode
   value: AutoWidth
 autoLayoutMaxHeight: -1
---- !TextCanvas &40
+--- !TextCanvas &41
 name: !<str> ""
 guid: {a: 5080374417141665348, b: 10281115381734942645}
 textRect: {x: -1388.125, y: -520.8334, w: 2776.25, h: 1041.667}
@@ -2724,7 +2741,7 @@ canvasStyle:
   __class: CanvasStyle
   value: BoundingBox
 pixelTextRect: {x: -1388.125, y: -520.8334, w: 2776.25, h: 1041.667}
---- !TextBackground &41
+--- !TextBackground &42
 name: !<str> ""
 guid: {a: 5374065727553796418, b: 2611114421311901869}
 enabled: true
@@ -2765,7 +2782,7 @@ gradientAngle: 90
 gradientStyle:
   __class: GradientStyle
   value: Linear
---- !LetterStyle &42
+--- !LetterStyle &43
 name: !<str> ""
 guid: {a: 4621444651144503810, b: 3399564539398869392}
 version: 101
@@ -2783,18 +2800,18 @@ fontDecoration:
   value: NONE
 decorationWidth: 0.03999999910593033
 decorationOffset: 0.1500000059604645
-fill: {localId: 43}
+fill: {localId: 44}
 strokes:
-  - {localId: 44}
+  - {localId: 45}
 effectStyleId: !<str> ""
 effectStylePath: !<str> ""
 effectStyleParams: !<str> ""
 innerShadows:
-  - {localId: 45}
+  - {localId: 46}
 letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
 letterBgAlpha: 0
 selected: false
---- !LetterStyleLayer &43
+--- !LetterStyleLayer &44
 name: !<str> ""
 guid: {a: 5372939167300225539, b: 9049254940618877081}
 serializedProperty:
@@ -2848,7 +2865,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &44
+--- !LetterStyleLayer &45
 name: !<str> ""
 guid: {a: 5219713722244374801, b: 16487891850386538143}
 serializedProperty:
@@ -2900,7 +2917,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &45
+--- !LetterStyleLayer &46
 name: !<str> ""
 guid: {a: 5757335797728947978, b: 9333327441002627472}
 serializedProperty:
@@ -2954,7 +2971,7 @@ shadowDistance: 0.05000000074505806
 shadowAngle: -30
 shadowFeather: 0
 shadowDiffuse: -1
---- !TextTypeSettingParam &46
+--- !TextTypeSettingParam &47
 name: !<str> ""
 guid: {a: 5384530381848528891, b: 745004701459875775}
 textAdaptiveCanvasEnabled: false
@@ -3007,7 +3024,7 @@ layoutMode:
   __class: LayoutMode
   value: AutoWidth
 autoLayoutMaxHeight: -1
---- !TextCanvas &47
+--- !TextCanvas &48
 name: !<str> ""
 guid: {a: 4958168996100519576, b: 9920625320076462243}
 textRect: {x: -1388.125, y: -520.8334, w: 2776.25, h: 1041.667}
@@ -3028,7 +3045,7 @@ canvasStyle:
   __class: CanvasStyle
   value: BoundingBox
 pixelTextRect: {x: -1388.125, y: -520.8334, w: 2776.25, h: 1041.667}
---- !TextBackground &48
+--- !TextBackground &49
 name: !<str> ""
 guid: {a: 4823293082780676430, b: 12500405531401774729}
 enabled: true
@@ -3069,7 +3086,7 @@ gradientAngle: 90
 gradientStyle:
   __class: GradientStyle
   value: Linear
---- !LetterStyle &49
+--- !LetterStyle &50
 name: !<str> ""
 guid: {a: 4710093713111595761, b: 3977733579233426869}
 version: 101
@@ -3087,18 +3104,18 @@ fontDecoration:
   value: NONE
 decorationWidth: 0.03999999910593033
 decorationOffset: 0.1500000059604645
-fill: {localId: 50}
+fill: {localId: 51}
 strokes:
-  - {localId: 51}
+  - {localId: 52}
 effectStyleId: !<str> ""
 effectStylePath: !<str> ""
 effectStyleParams: !<str> ""
 innerShadows:
-  - {localId: 52}
+  - {localId: 53}
 letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
 letterBgAlpha: 0
 selected: false
---- !LetterStyleLayer &50
+--- !LetterStyleLayer &51
 name: !<str> ""
 guid: {a: 4732579589556137661, b: 4652380225710317218}
 serializedProperty:
@@ -3152,7 +3169,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &51
+--- !LetterStyleLayer &52
 name: !<str> ""
 guid: {a: 5101638959076252278, b: 517576246827501210}
 serializedProperty:
@@ -3207,7 +3224,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &52
+--- !LetterStyleLayer &53
 name: !<str> ""
 guid: {a: 4674492540687375027, b: 7607504350776760733}
 serializedProperty:
@@ -3261,7 +3278,7 @@ shadowDistance: 0.05000000074505806
 shadowAngle: -30
 shadowFeather: 0
 shadowDiffuse: -1
---- !TextTypeSettingParam &53
+--- !TextTypeSettingParam &54
 name: !<str> ""
 guid: {a: 4899073893858076830, b: 11866700708393613981}
 textAdaptiveCanvasEnabled: false
@@ -3314,7 +3331,7 @@ layoutMode:
   __class: LayoutMode
   value: AutoWidth
 autoLayoutMaxHeight: -1
---- !TextCanvas &54
+--- !TextCanvas &55
 name: !<str> ""
 guid: {a: 5700121013128294376, b: 178428430764646077}
 textRect: {x: -7200, y: -868.0555, w: 14400, h: 1736.111}
@@ -3335,7 +3352,7 @@ canvasStyle:
   __class: CanvasStyle
   value: BoundingBox
 pixelTextRect: {x: -7200, y: -868.0555, w: 14400, h: 1736.111}
---- !TextBackground &55
+--- !TextBackground &56
 name: !<str> ""
 guid: {a: 4626594210868626098, b: 9324648129269778337}
 enabled: true
@@ -3376,78 +3393,7 @@ gradientAngle: 90
 gradientStyle:
   __class: GradientStyle
   value: Linear
---- !LetterStyleLayer &56
-name: !<str> ""
-guid: {a: 4914668385144536227, b: 12058269911082153873}
-serializedProperty:
-  __class: ScriptSerializedProperty
-  name: !<str> ""
-  guid: {a: 5554377115214663726, b: 10372850117633164467}
-  properties:
-    __class: Map
-    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
-    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
-    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
-    gradientColorPos1: 0
-    gradientColorPos2: 1
-    gradientColorPos3: 0.5
-type:
-  __class: LetterStyleLayerType
-  value: INNER_SHADOW
-enable: false
-alpha: 0.8999999761581421
-renderType:
-  __class: LetterStyleLayerRenderType
-  value: SOLID
-color: {r: 0, g: 0, b: 0, a: 1}
-gradientColors:
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-gradientPoints: [0, 1]
-gradientAngle: 90
-gradientMode:
-  __class: LetterStyleLayerGradientMode
-  value: ALL
-texturePath: !<str> ""
-textureFlipX: false
-textureFlipY: false
-textureScale: 1
-textureAlpha: 1
-textureAngle: 0
-textureRange: -1
-textureBlend:
-  __class: LetterStyleLayerTextureBlend
-  value: NONE
-textureStretchMode:
-  __class: ImageStretchMode
-  value: Fit
-textureOffsetX: 0
-textureOffsetY: 0
-texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-textureNoPremultiply: true
-strokeWidth: 0.2000000029802322
-shadowDistance: 0.05000000074505806
-shadowAngle: -30
-shadowFeather: 0
-shadowDiffuse: -1
---- !ScreenTransform &57
-name: !<str> ""
-guid: {a: 5460008909017461045, b: 16956637847174328729}
-enabled: true
-localPosition: {x: 0, y: 0, z: -40}
-localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
-parent: {localId: 7}
-mobility:
-  __class: Mobility
-  value: Dynamic
-anchoredPosition: {x: 0, y: 0}
-sizeDelta: {x: 720, y: 1280}
-pivot: {x: 0.5, y: 0.5}
-anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-pixelsPerUnit: 32
-enablePivotMatrix: true
---- !LetterStyle &58
+--- !LetterStyle &57
 name: !<str> ""
 guid: {a: 4774679906596689526, b: 12079251060036902324}
 version: 101
@@ -3465,18 +3411,18 @@ fontDecoration:
   value: NONE
 decorationWidth: 0.03999999910593033
 decorationOffset: 0.1500000059604645
-fill: {localId: 59}
+fill: {localId: 58}
 strokes:
-  - {localId: 60}
+  - {localId: 59}
 effectStyleId: !<str> ""
 effectStylePath: !<str> ""
 effectStyleParams: !<str> ""
 innerShadows:
-  - {localId: 56}
+  - {localId: 60}
 letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
 letterBgAlpha: 0
 selected: false
---- !LetterStyleLayer &59
+--- !LetterStyleLayer &58
 name: !<str> ""
 guid: {a: 5113559854104064553, b: 518082109357802386}
 serializedProperty:
@@ -3530,7 +3476,7 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
---- !LetterStyleLayer &60
+--- !LetterStyleLayer &59
 name: !<str> ""
 guid: {a: 5313276785113397552, b: 18271266234588288656}
 serializedProperty:
@@ -3584,6 +3530,60 @@ strokeWidth: 0.05400000140070915
 shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
+shadowDiffuse: -1
+--- !LetterStyleLayer &60
+name: !<str> ""
+guid: {a: 4914668385144536227, b: 12058269911082153873}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5554377115214663726, b: 10372850117633164467}
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos1: 0
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+enable: false
+alpha: 0.8999999761581421
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+textureNoPremultiply: true
+strokeWidth: 0.2000000029802322
+shadowDistance: 0.05000000074505806
+shadowAngle: -30
+shadowFeather: 0
 shadowDiffuse: -1
 --- !TextTypeSettingParam &61
 name: !<str> ""

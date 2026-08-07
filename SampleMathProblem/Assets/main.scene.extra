@@ -1441,7 +1441,7 @@
     "name": "爱心底",
     "version": "0.1.0",
     "rttiType": "SceneObject",
-    "expanded": true,
+    "expanded": false,
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
@@ -1864,69 +1864,6 @@
   },
   {
     "guid": {
-      "a": "c763667e-8902-29ea-ce94-cadc5566fc19",
-      "b": ""
-    },
-    "objGuid": "Guid(5707906179684205205, 11753710990877632187)",
-    "extraType": "Entity",
-    "name": "2D 前景",
-    "version": "0.1.0",
-    "rttiType": "SceneObject",
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "",
-    "disableSelection": false,
-    "hiddenInHierarchy": false,
-    "editorTags": []
-  },
-  {
-    "guid": {
-      "a": "4fff6fc2-f5c3-7479-d392-905bb09ea102",
-      "b": ""
-    },
-    "objGuid": "Guid(5236772030950842886, 4869016937174750613)",
-    "extraType": "Transform",
-    "name": "变换",
-    "version": "0.1.0",
-    "rttiType": "Transform",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "eulerAngle": [
-      0,
-      0,
-      0
-    ],
-    "linkage": 0
-  },
-  {
-    "guid": {
-      "a": "bf3506fa-ac8c-bc5c-2eba-a91511257f65",
-      "b": ""
-    },
-    "objGuid": "Guid(4742225306803740227, 6972652491260765091)",
-    "extraType": "EffectNode",
-    "name": "Render Group",
-    "version": "0.1.0",
-    "rttiType": "EffectNode",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "type": 6,
-    "sortMethod": 1,
-    "enableInputTexture": false,
-    "inputTexture": "00000000-0000-0000-0000-00000000004b"
-  },
-  {
-    "guid": {
       "a": "b14e2e3d-28e7-5245-2b87-a862b73c0460",
       "b": ""
     },
@@ -1995,5 +1932,68 @@
     "userEditable": false,
     "maxInputWords": 0,
     "templateId": ""
+  },
+  {
+    "guid": {
+      "a": "c763667e-8902-29ea-ce94-cadc5566fc19",
+      "b": ""
+    },
+    "objGuid": "Guid(5707906179684205205, 11753710990877632187)",
+    "extraType": "Entity",
+    "name": "2D 前景",
+    "version": "0.1.0",
+    "rttiType": "SceneObject",
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "",
+    "disableSelection": false,
+    "hiddenInHierarchy": false,
+    "editorTags": []
+  },
+  {
+    "guid": {
+      "a": "4fff6fc2-f5c3-7479-d392-905bb09ea102",
+      "b": ""
+    },
+    "objGuid": "Guid(5236772030950842886, 4869016937174750613)",
+    "extraType": "Transform",
+    "name": "变换",
+    "version": "0.1.0",
+    "rttiType": "Transform",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0
+  },
+  {
+    "guid": {
+      "a": "bf3506fa-ac8c-bc5c-2eba-a91511257f65",
+      "b": ""
+    },
+    "objGuid": "Guid(4742225306803740227, 6972652491260765091)",
+    "extraType": "EffectNode",
+    "name": "Render Group",
+    "version": "0.1.0",
+    "rttiType": "EffectNode",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "type": 6,
+    "sortMethod": 1,
+    "enableInputTexture": false,
+    "inputTexture": "00000000-0000-0000-0000-00000000004b"
   }
 ]
