@@ -458,6 +458,77 @@
   },
   {
     "guid": {
+      "a": "7aae097b-1e98-9853-16b1-4b575086e4c1",
+      "b": ""
+    },
+    "objGuid": "Guid(5219364680893564797, 3520301933858683063)",
+    "extraType": "Entity",
+    "name": "标题",
+    "version": "0.1.0",
+    "rttiType": "SceneObject",
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_2D_foreground",
+    "disableSelection": false,
+    "hiddenInHierarchy": false,
+    "editorTags": [],
+    "entityPanel": "2D"
+  },
+  {
+    "guid": {
+      "a": "9c3f01d0-e967-776f-1cbb-224a0fb173d0",
+      "b": ""
+    },
+    "objGuid": "Guid(4872744102722757659, 15252406590662936448)",
+    "extraType": "ScreenTransform",
+    "name": "2D 变换",
+    "version": "0.1.0",
+    "rttiType": "ScreenTransform",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "horizontalConstraint": 2,
+    "verticalConstraint": 2,
+    "linkageScale": 0,
+    "linkageSize": 0
+  },
+  {
+    "guid": {
+      "a": "af549afd-3c49-7546-c8d0-0f6c55605a7e",
+      "b": ""
+    },
+    "objGuid": "Guid(5258727155703672611, 1681399542463403944)",
+    "extraType": "Text2D",
+    "name": "文字",
+    "version": "1.1.0",
+    "rttiType": "Text",
+    "editable": true,
+    "_lazyUpgrateVersion": "1.1.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "artTextDropdown": "",
+    "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
+    "boxDimension": 2,
+    "totalAnimationTime": 0,
+    "inAnimationAssetID": "",
+    "loopAnimationAssetID": "",
+    "outAnimationAssetID": "",
+    "inAnimationDuration": 0,
+    "loopAnimationDuration": 0,
+    "outAnimationDuration": 0,
+    "userEditable": false,
+    "maxInputWords": 0,
+    "templateId": ""
+  },
+  {
+    "guid": {
       "a": "1ee3c785-8339-99f5-0580-629e59916f23",
       "b": ""
     },
@@ -1995,76 +2066,5 @@
     "sortMethod": 1,
     "enableInputTexture": false,
     "inputTexture": "00000000-0000-0000-0000-00000000004b"
-  },
-  {
-    "guid": {
-      "a": "7aae097b-1e98-9853-16b1-4b575086e4c1",
-      "b": ""
-    },
-    "objGuid": "Guid(5219364680893564797, 3520301933858683063)",
-    "extraType": "Entity",
-    "name": "标题",
-    "version": "0.1.0",
-    "rttiType": "SceneObject",
-    "expanded": true,
-    "type": "none",
-    "isAnimatorBound": false,
-    "modelGUID": "",
-    "createdEffectNodeKey": "effect_node_2D_foreground",
-    "disableSelection": false,
-    "hiddenInHierarchy": false,
-    "editorTags": [],
-    "entityPanel": "2D"
-  },
-  {
-    "guid": {
-      "a": "9c3f01d0-e967-776f-1cbb-224a0fb173d0",
-      "b": ""
-    },
-    "objGuid": "Guid(4872744102722757659, 15252406590662936448)",
-    "extraType": "ScreenTransform",
-    "name": "2D 变换",
-    "version": "0.1.0",
-    "rttiType": "ScreenTransform",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.1.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "horizontalConstraint": 2,
-    "verticalConstraint": 2,
-    "linkageScale": 0,
-    "linkageSize": 0
-  },
-  {
-    "guid": {
-      "a": "af549afd-3c49-7546-c8d0-0f6c55605a7e",
-      "b": ""
-    },
-    "objGuid": "Guid(5258727155703672611, 1681399542463403944)",
-    "extraType": "Text2D",
-    "name": "文字",
-    "version": "1.1.0",
-    "rttiType": "Text",
-    "editable": true,
-    "_lazyUpgrateVersion": "1.1.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "artTextDropdown": "",
-    "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
-    "boxDimension": 2,
-    "totalAnimationTime": 0,
-    "inAnimationAssetID": "",
-    "loopAnimationAssetID": "",
-    "outAnimationAssetID": "",
-    "inAnimationDuration": 0,
-    "loopAnimationDuration": 0,
-    "outAnimationDuration": 0,
-    "userEditable": false,
-    "maxInputWords": 0,
-    "templateId": ""
   }
 ]
