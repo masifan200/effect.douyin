@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "2e4343b3-dc3b-c53f-a679-76ed47c6b6bc",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "7483427726427439130",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

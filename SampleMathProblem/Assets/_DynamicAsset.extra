@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "7cc30d82-e1c9-cc54-bd38-22fdbf5714ae",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "_DynamicAsset",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]
