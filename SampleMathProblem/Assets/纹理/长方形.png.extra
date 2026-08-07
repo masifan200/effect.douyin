@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "3d095cb1-f874-7d8f-972b-345cb2b9f387",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "长方形",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "31323334353637383930313233343536:6ab3a8cb9977572b06931b0b9a8ebedadec22f63e737fcade41f72c235d54b6a",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\睡甲\\Desktop\\长方形.png",
+    "references": []
+  }
+]

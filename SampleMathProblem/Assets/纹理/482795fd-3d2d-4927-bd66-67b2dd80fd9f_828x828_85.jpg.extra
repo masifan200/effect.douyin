@@ -1,0 +1,32 @@
+[
+  {
+    "guid": {
+      "a": "b183e337-2f73-e7bb-5aa0-d4b0e0e546ca",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "482795fd-3d2d-4927-bd66-67b2dd80fd9f_828x828_85",
+    "version": "0.2.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "31323334353637383930313233343536:6ab3a8cb9977572b06931b0b9a8ebedadec22f63e737fcade41f72c235d54b6a",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "compressionType": 0,
+    "compressQuality": 0,
+    "compressMaxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "objGuid": "",
+    "resourceFilePath": "C:\\Users\\ASUS\\Desktop\\482795fd-3d2d-4927-bd66-67b2dd80fd9f_828x828_85.jpg",
+    "references": []
+  }
+]
