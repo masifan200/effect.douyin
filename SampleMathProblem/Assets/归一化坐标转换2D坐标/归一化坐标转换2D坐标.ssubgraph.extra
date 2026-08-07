@@ -16,12 +16,7 @@
     "objGuid": "",
     "assetPackageID": "7391784726958374948",
     "resourceFilePath": "C:\\Users\\睡甲\\AppData\\Local\\DouyinAR\\package\\7391784726958374948\\归一化坐标转换2D坐标.ssubgraph",
-    "references": [
-      {
-        "guid": "00000000-0000-0000-0000-00000000001e",
-        "propertyName": "SubgraphReference_0"
-      }
-    ],
+    "references": [],
     "combinedWithNodeLibary": true,
     "assetID": "7391784726958374948"
   }

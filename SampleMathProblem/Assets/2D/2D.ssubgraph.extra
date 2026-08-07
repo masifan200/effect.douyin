@@ -14,12 +14,7 @@
       "expandInPanel": false
     },
     "objGuid": "",
-    "references": [
-      {
-        "guid": "00000000-0000-0000-0000-00000000001e",
-        "propertyName": "SubgraphReference_0"
-      }
-    ],
+    "references": [],
     "combinedWithNodeLibary": false,
     "initGraphIdentity": ""
   }
