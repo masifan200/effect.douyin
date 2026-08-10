@@ -301,7 +301,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4754494524153753950, b: 1065844495253995706}
+            guid: {a: 4850082775761111173, b: 7922411261056958640}
             utf8: !<str> 9
             initialPosition: {x: -1860.938, y: 6.25}
             position: {x: -1860.938, y: 6.25}
@@ -313,7 +313,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5516325890883766738, b: 11700573977199542942}
+            guid: {a: 4876069701135392573, b: 14607915672044909200}
             utf8: !<str> 9
             initialPosition: {x: -1277.604, y: 6.25}
             position: {x: -1277.604, y: 6.25}
@@ -325,7 +325,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5443193478180101993, b: 15292490289929451411}
+            guid: {a: 5060556484472936979, b: 12303632810265036211}
             utf8: !<str> +
             initialPosition: {x: -624.4791, y: -21.35413}
             position: {x: -624.4791, y: -21.35413}
@@ -337,7 +337,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5624873799529371092, b: 7031419857864388001}
+            guid: {a: 5002446995748064342, b: 14465067802724948415}
             utf8: !<str> 9
             initialPosition: {x: 18.22906, y: 6.25}
             position: {x: 18.22906, y: 6.25}
@@ -349,7 +349,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4651550941571892753, b: 873049304589864368}
+            guid: {a: 5323376777429051957, b: 4794142932658451134}
             utf8: !<str> 9
             initialPosition: {x: 601.5626, y: 6.25}
             position: {x: 601.5626, y: 6.25}
@@ -361,7 +361,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4708018986645590195, b: 13056893504908899978}
+            guid: {a: 5717529226787865591, b: 17128224077244803206}
             utf8: !<str> =
             initialPosition: {x: 1254.688, y: -20.83334}
             position: {x: 1254.688, y: -20.83334}
@@ -373,7 +373,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4669830497459992838, b: 17609179413283172997}
+            guid: {a: 5577284236573350907, b: 1558147526171632823}
             utf8: !<str> "?"
             initialPosition: {x: 1876.564, y: 6.25}
             position: {x: 1876.564, y: 6.25}
@@ -568,7 +568,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4924317591249374042, b: 237608067952243882}
+            guid: {a: 4918110953076712009, b: 12048931451493664396}
             utf8: !<str> 1
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
@@ -855,7 +855,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5023755033744900255, b: 380678738056164279}
+            guid: {a: 5387097368068773113, b: 912361407460589479}
             utf8: !<str> 1
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
@@ -1134,7 +1134,7 @@ entities:
         zFar: 1000
         renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
         isRootCamera: false
-        maskMaterial: {localId: 1, path: 75bec9c8-f040-b862-0a3f-822801434fd3--75bec9c8-f040-b862-0a3f-822801434fd3.material}
+        maskMaterial: {localId: 1, path: 2ccf1377-bdb9-145f-f6bb-0e868d7d48bb--2ccf1377-bdb9-145f-f6bb-0e868d7d48bb.material}
         sortMethod:
           __class: CameraSortMethod
           value: STRICT_SORT_ORDER
@@ -1165,7 +1165,7 @@ entities:
             enableCustomBindingInput: false
             faceFittingFOV: 60
             faceIndex: 0
-            graphName: !<str> AlSubGraph_Mon10Aug2026075859GMT920u5h0
+            graphName: !<str> AlSubGraph_Mon10Aug2026092412GMT16t0r9
         enabled: true
         className: !<str> FaceBinding
       - __class: MeshRenderer
@@ -1192,11 +1192,11 @@ entities:
         properties:
           __class: Map
           OutputRT: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
-          algoGraphName: !<str> AlSubGraph_Mon10Aug2026075859GMT921zxgu
+          algoGraphName: !<str> AlSubGraph_Mon10Aug2026092715GMT695lmqc
           extraType: !<str> FaceFitting3DJS
           faceIds: [0, 1]
           femaleIntensity: 1
-          graphName: !<str> AlSubGraph_Mon10Aug2026075859GMT921zxgu
+          graphName: !<str> AlSubGraph_Mon10Aug2026092412GMT17nf3p
           intensity: 1
           maleIntensity: 1
           mirror: false
@@ -1251,7 +1251,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4812503374950451039, b: 2931162061907353988}
+            guid: {a: 4816447867412437635, b: 16340361513538665912}
             utf8: !<str> 左
             initialPosition: {x: -6084.202, y: 26.04163}
             position: {x: -6084.202, y: 26.04163}
@@ -1263,7 +1263,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5282198529798481535, b: 12685940731564161444}
+            guid: {a: 4779667033689179942, b: 719842846945197961}
             utf8: !<str> 右
             initialPosition: {x: -4348.091, y: 17.36108}
             position: {x: -4348.091, y: 17.36108}
@@ -1275,7 +1275,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5502607161303933992, b: 12937292343969633441}
+            guid: {a: 5428662320864200301, b: 3362583976628283300}
             utf8: !<str> 摇
             initialPosition: {x: -2629.341, y: 3.47229}
             position: {x: -2629.341, y: 3.47229}
@@ -1287,7 +1287,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5162408391742016233, b: 8153403881931953284}
+            guid: {a: 5640112160390616245, b: 11527808484800972454}
             utf8: !<str> 头
             initialPosition: {x: -864.5835, y: 0}
             position: {x: -864.5835, y: 0}
@@ -1299,7 +1299,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5194845762193697582, b: 8247163036608074660}
+            guid: {a: 5221512738268431284, b: 1895042977798171807}
             utf8: !<str> 进
             initialPosition: {x: 867.1875, y: -3.472168}
             position: {x: 867.1875, y: -3.472168}
@@ -1311,7 +1311,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4797925536226435337, b: 12667052730665067417}
+            guid: {a: 5412247940797201140, b: 8898829013014689}
             utf8: !<str> 行
             initialPosition: {x: 2592.882, y: -5.208252}
             position: {x: 2592.882, y: -5.208252}
@@ -1323,7 +1323,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5449624884264308089, b: 1155291821919831216}
+            guid: {a: 5219403906898970770, b: 5175310231384724879}
             utf8: !<str> 选
             initialPosition: {x: 4340.278, y: -4.34021}
             position: {x: 4340.278, y: -4.34021}
@@ -1335,7 +1335,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5057390208898663894, b: 414293069296036755}
+            guid: {a: 4882238998283595382, b: 3881684368170541463}
             utf8: !<str> 择
             initialPosition: {x: 6066.84, y: 0.868042}
             position: {x: 6066.84, y: 0.868042}
@@ -1787,7 +1787,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4788341808850135206, b: 11276533188847278743}
+            guid: {a: 5700286162727473540, b: 16282335764508322717}
             utf8: !<str> 小
             initialPosition: {x: -4678.126, y: 3.125}
             position: {x: -4678.126, y: 3.125}
@@ -1799,7 +1799,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5287479910905768849, b: 3770067483947459728}
+            guid: {a: 4685900405621923771, b: 2770267506133888144}
             utf8: !<str> 学
             initialPosition: {x: -3647.917, y: 0.520813}
             position: {x: -3647.917, y: 0.520813}
@@ -1811,7 +1811,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5062666797719974110, b: 1634922980550477239}
+            guid: {a: 5728937840947173882, b: 9151067640484546713}
             utf8: !<str> 生
             initialPosition: {x: -2611.459, y: 17.1875}
             position: {x: -2611.459, y: 17.1875}
@@ -1823,7 +1823,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4988311412458319213, b: 5216567616982390195}
+            guid: {a: 5116072661111070652, b: 9327263244616009902}
             utf8: !<str> 一
             initialPosition: {x: -1563.022, y: 44.79166}
             position: {x: -1563.022, y: 44.79166}
@@ -1835,7 +1835,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5102392428484876287, b: 12387976252013947017}
+            guid: {a: 4932282976558962075, b: 5492820925575224245}
             utf8: !<str> 百
             initialPosition: {x: -521.3544, y: -6.25}
             position: {x: -521.3544, y: -6.25}
@@ -1847,7 +1847,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5420985882006013294, b: 5288305204718862232}
+            guid: {a: 4913664519819550336, b: 3566482485692179644}
             utf8: !<str> 以
             initialPosition: {x: 519.7916, y: -7.812439}
             position: {x: 519.7916, y: -7.812439}
@@ -1859,7 +1859,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5603666391536382463, b: 1586372634232796590}
+            guid: {a: 5425957407207645739, b: 1267704800883896709}
             utf8: !<str> 内
             initialPosition: {x: 1562.5, y: 6.103516e-05}
             position: {x: 1562.5, y: 6.103516e-05}
@@ -1871,7 +1871,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5163537464315762729, b: 12797790089152145592}
+            guid: {a: 4756563664982070104, b: 5446558375500324739}
             utf8: !<str> 加
             initialPosition: {x: 2567.188, y: 6.103516e-05}
             position: {x: 2567.188, y: 6.103516e-05}
@@ -1883,7 +1883,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5249078737923532632, b: 1257422120659015074}
+            guid: {a: 5175836423191495700, b: 1298375891488082599}
             utf8: !<str> 减
             initialPosition: {x: 3637.501, y: -11.45831}
             position: {x: 3637.501, y: -11.45831}
@@ -1895,7 +1895,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4749371762237348445, b: 9127706173546738072}
+            guid: {a: 4957427621944692549, b: 12057923526091157437}
             utf8: !<str> 法
             initialPosition: {x: 4688.022, y: -1.5625}
             position: {x: 4688.022, y: -1.5625}
@@ -1962,6 +1962,10 @@ jsScriptSystems:
   - !<str> js/JSAssetSystem.js
   - !<str> js/AmazingProEditor.js
   - !<str> js/IEJsEntrySystemScript.js
+  - !<str> js/Graph/GraphSystem.js
+  - !<str> js/Graph/GraphSystem.js
+  - !<str> js/Graph/GraphSystem.js
+  - !<str> js/Graph/GraphSystem.js
 enableMultiTouch: false
 enableLightMultiPass: false
 pixelLightCount: 4
