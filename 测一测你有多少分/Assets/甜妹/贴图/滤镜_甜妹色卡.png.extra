@@ -1,0 +1,31 @@
+[
+  {
+    "guid": {
+      "a": "0b601aa5-b351-e9eb-16e9-90ee1414ab01",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "滤镜_甜妹色卡",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": true,
+    "compressionType": 0,
+    "assetPackageID": "7217814253670072357",
+    "extendedInfo": {
+      "hideInPanel": false
+    },
+    "compressMaxResolution": 512,
+    "compressQuality": 0
+  }
+]

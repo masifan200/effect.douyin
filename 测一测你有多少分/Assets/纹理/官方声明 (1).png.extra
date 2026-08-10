@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "abc64b13-7c45-4f07-e4b7-0955a3b49b2e",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "官方声明 (1)",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "extendedInfo": {
+      "hideInPanel": false
+    },
+    "compressMaxResolution": 512,
+    "compressQuality": 0
+  }
+]

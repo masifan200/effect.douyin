@@ -1,0 +1,109 @@
+[
+  {
+    "guid": {
+      "a": "39f26c7b-d5ab-c964-d89d-b5e728ba1802",
+      "b": ""
+    },
+    "extraType": "ResItemPrefab",
+    "name": "滤镜_甜妹",
+    "version": "1.0.3",
+    "rttiType": "Prefab",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "relatedResourceGuids": [],
+    "relatedPrefabResourceGuids": [],
+    "objGuid": "",
+    "references": [],
+    "data": [
+      {
+        "guid": {
+          "a": "8b44e0f3-01d6-f032-3bbe-5c33b5f12839",
+          "b": ""
+        },
+        "objGuid": "Guid(5059780128351606942, 3197984193834541469)",
+        "extraType": "Entity",
+        "name": "滤镜_甜妹",
+        "rttiType": "Entity",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "createdBy": "AddObject",
+        "expanded": true,
+        "type": "none",
+        "createdEffectNodeKey": "effect_node_post_effect"
+      },
+      {
+        "guid": {
+          "a": "ba3f21c4-75c1-a2ea-62ef-d91055db7101",
+          "b": ""
+        },
+        "objGuid": "Guid(5740597735199382853, 6290379907670654647)",
+        "extraType": "Transform",
+        "name": "变换",
+        "eulerAngle": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "rttiType": "Transform",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "createdBy": "AddObject",
+        "expanded": true,
+        "editable": true
+      },
+      {
+        "guid": {
+          "a": "3e77d9fa-6862-1034-e199-3413acca665a",
+          "b": ""
+        },
+        "objGuid": "Guid(5337097908557000607, 5372751518535624589)",
+        "extraType": "Camera",
+        "name": "相机",
+        "rttiType": "Camera",
+        "version": "0.2.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "createdBy": "AddObject",
+        "expanded": false,
+        "editable": true,
+        "usage": "Common",
+        "maskTexture": {
+          "_copiedToProj": false,
+          "_guid": "00000000-0000-0000-0000-000000000802",
+          "_isVector": false,
+          "_isResItem": false
+        }
+      },
+      {
+        "guid": {
+          "a": "f0157927-6b6c-0ff3-b289-9e670704ce59",
+          "b": ""
+        },
+        "objGuid": "Guid(5452996246765038011, 9828716700867064704)",
+        "extraType": "FilterV2",
+        "name": "滤镜",
+        "rttiType": "FilterV2",
+        "version": "0.1.0",
+        "isVisibleInInspector": true,
+        "hideInPanel": false,
+        "createdBy": "AddObject",
+        "expanded": true,
+        "editable": true
+      }
+    ],
+    "effectNodeType": 2,
+    "dependencyData": []
+  }
+]

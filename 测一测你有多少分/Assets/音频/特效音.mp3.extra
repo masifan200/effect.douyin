@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "ceabf1c4-f0a7-1c64-cb69-9a3d45363f25",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "特效音",
+    "version": "0.1.0",
+    "rttiType": "AudioAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "mccState": "SUCCESS",
+    "objGuid": "",
+    "references": []
+  }
+]

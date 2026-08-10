@@ -1,0 +1,80 @@
+%YAML 1.1
+--- !Prefab &1
+name: !<str> 滤镜_甜妹
+guid: {a: 5653791242407216623, b: 10060533027090603195}
+entities:
+  - __class: Entity
+    name: !<str> 滤镜_甜妹
+    guid: {a: 5059780128351606942, b: 3197984193834541469}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5337097908557000607, b: 5372751518535624589}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 1
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
+        orthoScale: 1
+        fitMode:
+          __class: CameraFitMode
+          value: NONE
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: NEVER
+      - __class: DynamicComponent
+        name: !<str> FilterV2
+        guid: {a: 5452996246765038011, b: 9828716700867064704}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5027981726231079616, b: 4105626168618340542}
+          properties:
+            __class: Map
+            brightness: 0
+            colorCorrEnabled: false
+            contrast: 0
+            exposure: 0
+            intensity: 0.699999988079071
+            lutEnabled: true
+            lutTexture: {localId: 1, path: 0b601aa5-b351-e9eb-16e9-90ee1414ab01--0b601aa5-b351-e9eb-16e9-90ee1414ab01.png}
+            material: {localId: 1, path: 00000000-0000-0000-0000-0000000000d3--00000000-0000-0000-0000-0000000000d3.material}
+            missingLut: false
+            saturation: 0
+            temperature: 0
+            tint: 0
+        enabled: true
+        className: !<str> FilterV2
+    layer: 0
+standaloneResources:
+  __class: Map
+--- !Transform &3
+name: !<str> ""
+guid: {a: 5740597735199382853, b: 6290379907670654647}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic

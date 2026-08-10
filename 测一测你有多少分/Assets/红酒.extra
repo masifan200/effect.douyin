@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "6d65e6b9-b79d-8a6e-8eb2-dc60f8c2e9ae",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "红酒",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

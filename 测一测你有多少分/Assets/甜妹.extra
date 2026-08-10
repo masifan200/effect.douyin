@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "b6d7ae53-f6c1-d3a1-e6c1-5553ffb44761",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "甜妹",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]
