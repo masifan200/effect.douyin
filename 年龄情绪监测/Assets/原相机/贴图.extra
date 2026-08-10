@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "a76dca06-8e10-663b-7c60-e265a7110f32",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "贴图",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

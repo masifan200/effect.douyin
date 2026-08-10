@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "779869e7-1f65-79bb-1a55-0e1913f5a228",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "预制件",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "fce827bf-90a3-fb5c-2ab8-38929a4afaf2",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "原创声明",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "extendedInfo": {
+      "hideInPanel": false
+    },
+    "compressMaxResolution": 512,
+    "compressQuality": 0
+  }
+]

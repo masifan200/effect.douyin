@@ -1,0 +1,30 @@
+[
+  {
+    "guid": {
+      "a": "37e9276d-0c55-ec93-5526-8d434402a3e8",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "矩形框",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "extendedInfo": {
+      "hideInPanel": false
+    },
+    "compressMaxResolution": 512,
+    "compressQuality": 0
+  }
+]

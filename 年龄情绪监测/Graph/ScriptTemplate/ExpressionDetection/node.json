@@ -1,0 +1,120 @@
+{
+	"name": "Facial Expression Detection",
+	"id": "c4b0c8c1-cdd1-8f0e-936d-0944b30af5de",
+	"inputs": [
+		{
+			"name": "Detect",
+			"description": "The face to detect the expression. Face 0 represents the first face appearing in the scene, Face 4 represents the fifth face appearing in the scene. Any represents any face in the scene.",
+			"type": "String",
+			"value_list": [
+				"Face 0",
+				"Face 1",
+				"Face 2",
+				"Face 3",
+				"Face 4",
+				"Any"
+			],
+			"displayType": "String",
+			"nameKey": "graph_facial_expression_detection_input_detect",
+			"descriptionKey": "graph_facial_expression_detection_input_detect_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_facial_expression_detection_input_detect_valueList_face0",
+				"graph_facial_expression_detection_input_detect_valueList_face1",
+				"graph_facial_expression_detection_input_detect_valueList_face2",
+				"graph_facial_expression_detection_input_detect_valueList_face3",
+				"graph_facial_expression_detection_input_detect_valueList_face4",
+				"graph_facial_expression_detection_input_detect_valueList_any"
+			]
+		},
+		{
+			"name": "Facial Expression",
+			"type": "String",
+			"value_list": [
+				"Happy",
+				"Angry",
+				"Surprise",
+				"Disgust",
+				"Fear",
+				"Sad",
+				"Neutral"
+			],
+			"description": "The  facial expression to detect, including Happy, Angry, Surprise, Disgust, Fear, Sad, Neutral",
+			"displayType": "String",
+			"nameKey": "graph_facial_expression_detection_input_facialexpression",
+			"descriptionKey": "graph_facial_expression_detection_input_facialexpression_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_facial_expression_detection_input_facialexpression_valueList_happy",
+				"graph_facial_expression_detection_input_facialexpression_valueList_angry",
+				"graph_facial_expression_detection_input_facialexpression_valueList_surprise",
+				"graph_facial_expression_detection_input_facialexpression_valueList_disgust",
+				"graph_facial_expression_detection_input_facialexpression_valueList_fear",
+				"graph_facial_expression_detection_input_facialexpression_valueList_sad",
+				"graph_facial_expression_detection_input_facialexpression_valueList_neutral"
+			],
+			"isContentFeature": true
+		}
+	],
+	"outputs": [
+		{
+			"name": "Begin",
+			"type": "Pulse",
+			"description": "Execute the next node when the expression begins",
+			"displayType": "Exec",
+			"nameKey": "graph_facial_expression_detection_output_begin",
+			"descriptionKey": "graph_facial_expression_detection_output_begin_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"type": "Pulse",
+			"description": "Keep executing the next node when the expression stays",
+			"displayType": "Exec",
+			"nameKey": "graph_facial_expression_detection_output_stay",
+			"descriptionKey": "graph_facial_expression_detection_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "End",
+			"type": "Pulse",
+			"description": "Execute the next node when the expression ends",
+			"displayType": "Exec",
+			"nameKey": "graph_facial_expression_detection_output_end",
+			"descriptionKey": "graph_facial_expression_detection_output_end_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "None",
+			"description": "Keep executing the next node when no expression is on the certain face or the certain face is not in the scene",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_facial_expression_detection_output_none",
+			"descriptionKey": "graph_facial_expression_detection_output_none_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"js": "CGExpressionDetection.js",
+	"version": "1.0.3",
+	"category": "Head & Face",
+	"nodeEvent": [
+		"onUpdate",
+		"resetOnRecord"
+	],
+	"graphAlgorithms": [
+		"expressionDetect"
+	],
+	"description": "Detect facial expressions of people using this effect. To detect facial expression more than one face, assign a Face Expression Detection node to each face in the scene. It can detect up to five facial expressions.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_facial_expression_detection_website",
+	"nameKey": "graph_facial_expression_detection_name",
+	"categoryKey": "graph_category_headface",
+	"descriptionKey": "graph_facial_expression_detection_description",
+	"contentFeature": [
+		"FacialExpression"
+	]
+}
