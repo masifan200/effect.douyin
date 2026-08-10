@@ -1,6 +1,6 @@
 {
   "name": "未命名",
-  "lastModified": "Mon, 10 Aug 2026 02:38:47 GMT",
+  "lastModified": "Mon, 10 Aug 2026 02:51:20 GMT",
   "version": "9.2.1",
   "toolName": "Douyin AR",
   "renderNames": {
@@ -69,9 +69,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 49852339476,
-  "durationCreation": 264347084,
-  "durationBackground": 237594722,
+  "durationToCreate": 49853092698,
+  "durationCreation": 264540782,
+  "durationBackground": 237621409,
   "effectHint": "",
   "overwriteBuiltinGAN": 1,
   "overwriteBuiltinFilter": 1,
@@ -87,10 +87,10 @@
   "projectID": "32dde9d9-bf1a-9560-8d4b-b21d222d20ac",
   "previewProjID": "c4d29678-0e5f-5bf8-5430-4baf6436f98b",
   "LastVideoInput": {
-    "type": "preview_face",
-    "name": "preview_single_shake_head||女",
-    "index": 10,
-    "resourceUrl": "C:\\Users\\电脑\\AppData\\Local\\DouyinAR\\Shared\\Resources\\PreviewResource\\video\\preview_face\\female\\female-shake-head.mp4"
+    "type": "preview_camera",
+    "name": "No Camera",
+    "index": 0,
+    "resourceUrl": ""
   },
   "selectedIdList": [
     "amz:Guid(4953847264259209473, 4884321244164599180)"
@@ -105,7 +105,7 @@
     "url": "https://lf6-effectplatform-sign.byteeffecttos.com/ies.fe.effect/e093a5b7be25dbcaf6637ae0a676c642?x-expires=1785436074&x-signature=vk%2FAGDIT7PXzSXcolcsMCKyLgGo%3D"
   },
   "isNewCreatedProject": true,
-  "preUpgradeVersion": "9.1.3",
+  "preUpgradeVersion": "9.2.1",
   "templateAuthorUid": "",
   "isThirdPartyTemplate": true,
   "soundStartTime": 0,
