@@ -1,6 +1,6 @@
 {
   "name": "未命名",
-  "lastModified": "Mon, 10 Aug 2026 03:04:56 GMT",
+  "lastModified": "Mon, 10 Aug 2026 04:25:44 GMT",
   "version": "9.2.1",
   "toolName": "Douyin AR",
   "renderNames": {
@@ -69,9 +69,9 @@
     "62": "Layer 62",
     "63": "Layer 63"
   },
-  "durationToCreate": 49853908543,
-  "durationCreation": 264927325,
-  "durationBackground": 237740655,
+  "durationToCreate": 49858756622,
+  "durationCreation": 265000947,
+  "durationBackground": 237743450,
   "effectHint": "",
   "overwriteBuiltinGAN": 1,
   "overwriteBuiltinFilter": 1,
@@ -89,12 +89,10 @@
   "LastVideoInput": {
     "type": "preview_face",
     "name": "preview_single_shake_head||女",
-    "index": -1,
+    "index": 10,
     "resourceUrl": "C:\\Users\\电脑\\AppData\\Local\\DouyinAR\\Shared\\Resources\\PreviewResource\\video\\preview_face\\female\\female-shake-head.mp4"
   },
-  "selectedIdList": [
-    "amz:Guid(4953847264259209473, 4884321244164599180)"
-  ],
+  "selectedIdList": [],
   "lastSceneView": 0,
   "perfTested": true,
   "effectSize": 2220587,
