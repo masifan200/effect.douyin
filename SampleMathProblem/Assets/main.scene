@@ -277,7 +277,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> ? + ? = ?
+            _inner_input: !<str> "? + ? = ?"
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
@@ -544,7 +544,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> ?
+            _inner_input: !<str> "?"
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
@@ -831,7 +831,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> ?
+            _inner_input: !<str> "?"
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
