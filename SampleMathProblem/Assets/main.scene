@@ -277,7 +277,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> 99+99=?
+            _inner_input: !<str> 50+49=?
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
@@ -302,7 +302,7 @@ entities:
           - __class: Letter
             name: !<str> ""
             guid: {a: 5599578496698776773, b: 1211986138996647101}
-            utf8: !<str> 9
+            utf8: !<str> 5
             initialPosition: {x: -1860.938, y: 6.25}
             position: {x: -1860.938, y: 6.25}
             rotate: {x: 0, y: 0, z: 0}
@@ -314,7 +314,7 @@ entities:
           - __class: Letter
             name: !<str> ""
             guid: {a: 5075120744454715367, b: 14314167946743889030}
-            utf8: !<str> 9
+            utf8: !<str> 0
             initialPosition: {x: -1277.604, y: 6.25}
             position: {x: -1277.604, y: 6.25}
             rotate: {x: 0, y: 0, z: 0}
@@ -338,7 +338,7 @@ entities:
           - __class: Letter
             name: !<str> ""
             guid: {a: 5215148766266160365, b: 8913425178475338924}
-            utf8: !<str> 9
+            utf8: !<str> 4
             initialPosition: {x: 18.22906, y: 6.25}
             position: {x: 18.22906, y: 6.25}
             rotate: {x: 0, y: 0, z: 0}
@@ -383,8 +383,8 @@ entities:
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
             letterStyle: {localId: 31}
-        str: !<str> 99+99=?
-        richStr: !<str> 99+99=?
+        str: !<str> 50+49=?
+        richStr: !<str> 50+49=?
         typeSettingParam: {localId: 34}
         canvas: {localId: 35}
         globalBackground: {localId: 36}
@@ -544,7 +544,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> 1
+            _inner_input: !<str> "?"
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
@@ -569,7 +569,7 @@ entities:
           - __class: Letter
             name: !<str> ""
             guid: {a: 5129386989784155421, b: 4024119863100850065}
-            utf8: !<str> 1
+            utf8: !<str> "?"
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
             rotate: {x: 0, y: 0, z: 0}
@@ -578,8 +578,8 @@ entities:
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
             letterStyle: {localId: 37}
-        str: !<str> 1
-        richStr: !<str> 1
+        str: !<str> "?"
+        richStr: !<str> "?"
         typeSettingParam: {localId: 41}
         canvas: {localId: 42}
         globalBackground: {localId: 43}
@@ -831,7 +831,7 @@ entities:
             _glowVAngle: 0
             _horizontalAlignment: 1
             _inAnimationAssetID: !<str> ""
-            _inner_input: !<str> 1
+            _inner_input: !<str> "?"
             _lineBreakType: 1
             _loopAnimationAssetID: !<str> ""
             _maxInputWords: 0
@@ -856,7 +856,7 @@ entities:
           - __class: Letter
             name: !<str> ""
             guid: {a: 5699357673993502978, b: 10331498022027212210}
-            utf8: !<str> 1
+            utf8: !<str> "?"
             initialPosition: {x: -41.66669, y: 0}
             position: {x: -41.66669, y: 0}
             rotate: {x: 0, y: 0, z: 0}
@@ -865,8 +865,8 @@ entities:
             extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
             instanceColor: {r: 1, g: 1, b: 1, a: 1}
             letterStyle: {localId: 44}
-        str: !<str> 1
-        richStr: !<str> 1
+        str: !<str> "?"
+        richStr: !<str> "?"
         typeSettingParam: {localId: 48}
         canvas: {localId: 49}
         globalBackground: {localId: 50}
