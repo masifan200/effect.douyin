@@ -1096,7 +1096,7 @@ entities:
     name: !<str> 选择题
     guid: {a: 5486574888403292465, b: 16265973032128187817}
     scene: {localId: 1}
-    selfvisible: false
+    selfvisible: true
     components:
       - {localId: 10}
     layer: 0
