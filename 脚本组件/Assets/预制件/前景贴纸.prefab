@@ -1,0 +1,77 @@
+%YAML 1.1
+--- !Prefab &1
+name: !<str> ""
+guid: {a: 5717627621073024851, b: 9321251926809870000}
+entities:
+  - __class: Entity
+    name: !<str> 前景贴纸
+    guid: {a: 5406228772878153134, b: 17970054389979708330}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4934870336354819622, b: 4513458352875398049}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: material/5042423306632348781-14303073019587857538.material}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 00000000-0000-0000-0000-000000001543--00000000-0000-0000-0000-000000001543.png}
+        opacity: 1
+        color: {r: 0.1665278, g: 0.1665278, b: 0.9083334, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Stretch
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5508297097149921726, b: 9055109833545853876}
+        enabled: true
+        path: !<str> js/Graph/Component/ScriptGraph_e8e935acbfa8a3a04e09019f2560a598.js
+        properties:
+          __class: Map
+          componentAlgorithmMap:
+            __class: Map
+          componentValueMap:
+            __class: Map
+            Variable_42bb14f84eeaecff13413be8ae1e1f88: {r: 0, g: 0, b: 0, a: 1}
+            Variable_77b94e986da0afbb11ceed658abba023: {x: 0, y: 0}
+            Variable_9c5e0a3f91a9c319cb04ad40ba40b580: {x: 0, y: 0}
+            Variable_ab0dc4a9dddaff592b81ecf5fc856439: 0
+          extraType: !<str> ComponentGraph
+    layer: 0
+standaloneResources:
+  __class: Map
+--- !ScreenTransform &4
+name: !<str> ""
+guid: {a: 5358903785404761653, b: 17971380613939825069}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 100, y: 100}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: false

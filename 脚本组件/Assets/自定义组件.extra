@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "dac3315d-e8c3-b796-9dc1-9a59f50c85ed",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "自定义组件",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

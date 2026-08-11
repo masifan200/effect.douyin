@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "331c5c46-befa-4946-14ba-4babab25cfad",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "花字",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

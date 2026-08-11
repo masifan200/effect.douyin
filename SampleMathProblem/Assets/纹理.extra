@@ -11,7 +11,7 @@
     "extendedInfo": {
       "isVisibleInInspector": true,
       "hideInPanel": false,
-      "expandInPanel": true
+      "expandInPanel": false
     },
     "objGuid": "",
     "references": []

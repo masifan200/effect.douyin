@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "3d708956-e9b5-e622-9d29-b596d34fe766",
+      "b": ""
+    },
+    "extraType": "ResItemComponentGraph",
+    "name": "演示数值渐变",
+    "expandInPanel": false,
+    "version": "0.0.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "resourceFilePath": "D:\\Pixel Effect\\DouyinVer610v2\\Douyin AR\\Resources\\BuiltinResource\\ScriptGraph\\BuiltinAsset\\Custom Component.compgraph"
+  }
+]

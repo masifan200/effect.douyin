@@ -1,0 +1,99 @@
+{
+	"name": "Instantiate Prefab",
+	"id": "a7537436-dfde-317b-5c78-c7fbf013fed9",
+	"inputs": [
+		{
+			"name": "Start Execution",
+			"type": "Pulse",
+			"description": "Begin a single instantiation",
+			"displayType": "Exec",
+			"nameKey": "graph_instantiate_prefab_input_startexecution",
+			"descriptionKey": "graph_instantiate_prefab_input_startexecution_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Prefab",
+			"type": "Prefab",
+			"description": "Select the prefab to be instantiated",
+			"displayType": "Prefab",
+			"nameKey": "graph_instantiate_prefab_input_prefab",
+			"descriptionKey": "graph_instantiate_prefab_input_prefab_description",
+			"displayTypeKey": "graph_type_prefab"
+		},
+		{
+			"name": "Parent object",
+			"type": "Entity",
+			"description": "The object to be attached (as a child); if a group is selected, attach it to the last element within the group",
+			"displayType": "Scene Object",
+			"nameKey": "graph_instantiate_prefab_input_parentobject",
+			"descriptionKey": "graph_instantiate_prefab_input_parentobject_description",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Instantiation limit",
+			"type": "Int",
+			"dynamic": true,
+			"default_value": "100",
+			"description": "To ensure performance, any further instantiations will be disabled once the maximum limit is reached",
+			"displayType": "Number",
+			"nameKey": "graph_instantiate_prefab_input_instantiationlimit",
+			"descriptionKey": "graph_instantiate_prefab_input_instantiationlimit_description",
+			"displayTypeKey": "graph_type_number",
+			"range": [
+				[
+					0,
+					99999,
+					1
+				]
+			]
+		}
+	],
+	"outputs": [
+		{
+			"name": "Execution Successful",
+			"description": "Execute after successful instantiation",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_instantiate_prefab_output_executionsuccessful",
+			"descriptionKey": "graph_instantiate_prefab_output_executionsuccessful_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Scene Object",
+			"type": "Entity",
+			"description": "Scene object obtained from the Prefab",
+			"displayType": "Scene Object",
+			"nameKey": "graph_instantiate_prefab_output_sceneobject",
+			"descriptionKey": "graph_instantiate_prefab_output_sceneobject_description",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Total number of instances",
+			"type": "Int",
+			"dynamic": true,
+			"default_value": "0",
+			"description": "The total number of instantiated scene objects from the current prefab (up to the provided instantiation limit)",
+			"displayType": "Number",
+			"nameKey": "graph_instantiate_prefab_output_totalnumberofinstances",
+			"descriptionKey": "graph_instantiate_prefab_output_totalnumberofinstances_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGInstantiatePrefabToParent.js",
+	"version": "1.0.0",
+	"SDKVersion": "16.4.0",
+	"category": "Utility",
+	"description": "Instantiate a scene object based on the provided prefab and attach it to the selected parent object (as the last element); if the selected object is a group, attach it as a sibling to the last element within the group",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nodeEvent": [
+		"beforeStart",
+		"resetOnRecord"
+	],
+	"nameKey": "graph_instantiate_prefab_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_instantiate_prefab_description"
+}
