@@ -9,7 +9,7 @@
 | 工具版本 | 9.1.3 |
 | 实现方式 | **纯蓝图**（可视化编程），不含任何自定义代码 |
 | 工程来源 | 由官方示例 [`PhotoSelect`](../PhotoSelect/) 改造 |
-| 当前规模 | 294 节点 / 359 连线 / 26 变量 |
+| 当前规模 | 295 节点 / 361 连线 / 26 变量 |
 
 ---
 
@@ -32,7 +32,7 @@
 
 **玩法链路一句话**：开拍 → 随机出一道算式 → 左右歪头选答案 → 红绿边框反馈 → 1.2 秒后下一题 → 满 10 题显示「得分：X/10」。
 
-**改难度**：出题链里两个 `Index Generator` 的 `To` 参数（默认 100），改成 20 就是 20 以内口算。
+**改难度**：变量 `MaxNumber` 的初值（默认 100），改成 20 就是 20 以内口算。两个出题用的 `Index Generator` 的 `To` 都读它，只改这一处即可。
 
 **改题数**：结算判断处 `Greater or Equal` 的 `B`（默认 10）。
 
@@ -149,8 +149,8 @@ Get Component Property(localEulerAngles) ← 3D 跟踪头模的 Transform
 入口是名为 **「出题入口」** 的 Sequence 节点。
 
 ```
-Index Generator(Random,1~100) → NumA
-Index Generator(Random,1~100) → NumB
+Index Generator(Random, 1~MaxNumber) → NumA
+Index Generator(Random, 1~MaxNumber) → NumB
 Index Generator(Random,0~1) → Equal(=1) → IsAdd
         ↓
       If(IsAdd)
@@ -258,7 +258,7 @@ Update → Sequence.Procedure 2 → Do Once
 | `CurQuestion` | Number | 已答题数 |
 | `Score` | Number | 答对数 |
 | `LockAnswer` | Boolean | 答题锁，防一次摇头重复判定；结算时也要置 true |
-| `MaxNumber` | Number | ⚠️ 预留未接线，当前范围硬编码在 Index Generator 的 To |
+| `MaxNumber` | Number | 出题数值上限（初值 100），/ 两个 Index Generator 的  都读它 |
 | `Inited` | Boolean | ⚠️ 已停用，初始化改用 `Do Once` |
 
 `CorrectSide` 与 `PickSide` **必须共用同一套左右编码**，否则判定整体取反，详见 [4.3](#43-判定链)。
@@ -383,8 +383,8 @@ if (typeof o.__uniqueId === 'number' && o.__uniqueId > maxId) maxId = o.__unique
 
 ### 未接线
 
-- `MaxNumber` 变量预留未用，难度范围目前硬编码在两个 `Index Generator` 的 `To`
 - `Inited` 变量与 `#248 If` 已停用（初始化改 `Do Once`），保留未删
+- 干扰答案的偏移范围（1~20）仍硬编码在 `#167` 的 `To`
 
 ### 未验证
 
