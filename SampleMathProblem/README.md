@@ -258,7 +258,7 @@ Update → Sequence.Procedure 2 → Do Once
 | `CurQuestion` | Number | 已答题数 |
 | `Score` | Number | 答对数 |
 | `LockAnswer` | Boolean | 答题锁，防一次摇头重复判定；结算时也要置 true |
-| `MaxNumber` | Number | 出题数值上限（初值 100），/ 两个 Index Generator 的  都读它 |
+| `MaxNumber` | Number | 出题数值上限（初值 100），`#132` / `#134` 两个 Index Generator 的 `To` 都读它 |
 | `Inited` | Boolean | ⚠️ 已停用，初始化改用 `Do Once` |
 
 `CorrectSide` 与 `PickSide` **必须共用同一套左右编码**，否则判定整体取反，详见 [4.3](#43-判定链)。
