@@ -6,7 +6,7 @@
 | ---- | ---- |
 | 工程目录 | `SampleMathProblem/` |
 | 创作工具 | 像塑 PC 端（工程内部标识 `Douyin AR`），官网 effect.douyin.com |
-| 工具版本 | 9.1.3 |
+| 工具版本 | 9.2.2（`effect.dyehpj` 的 `version` 字段；工程最初由 5.3.0 创建） |
 | 实现方式 | **纯蓝图**（可视化编程），不含任何自定义代码 |
 | 工程来源 | 由官方示例 [`PhotoSelect`](../PhotoSelect/) 改造 |
 | 当前规模 | 276 节点 / 347 连线 / 21 变量 |
@@ -79,6 +79,10 @@ tasklist | grep -qi "Douyin AR" && echo "仍在运行，中止" && exit 1
 > 进程名 `Douyin AR.exe` 含空格，第 2 列是 `AR.exe` 而不是 PID，
 > `taskkill //PID AR.exe` 只会报「没有找到进程」。本项目有好几轮
 > 「✅ 已确认退出」是假的，实际进程一直活着。
+
+**`effect.dyehpj` 不需要跟着改。** 它只存项目元信息（名称、图层名、`projectID`、预览视频、上传记录、工具版本），**不含任何蓝图或场景数据**。改 `graph.json` / `main.scene` 后无需同步它。
+
+**工作区残留也不用清。** `%LOCALAPPDATA%\DouyinAR\Instances\Instance1\` 下有 `Backup/*.tmp/Graph/graph.json` 和 `Preview/` 缓存，但都是历史快照；重新打开工程时读的是工程目录本身，不会被它们污染。看到旧内容只有一个原因 —— **进程没退出**。
 
 **怎么判断编辑器加载的是不是新版**：
 
