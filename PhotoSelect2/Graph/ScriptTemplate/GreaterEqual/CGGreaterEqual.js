@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGGreaterEqual=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGGreaterEqual extends ScriptNodeAPI_1.BaseNode{getOutput(){return this.inputs[0]()>=this.inputs[1]()}}exports.CGGreaterEqual=CGGreaterEqual;

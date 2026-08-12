@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGAnd=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGAnd extends ScriptNodeAPI_1.BaseNode{getOutput(e){return this.inputs[0]()&&this.inputs[1]()}}exports.CGAnd=CGAnd;

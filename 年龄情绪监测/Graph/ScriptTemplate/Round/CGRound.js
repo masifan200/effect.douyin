@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGRound=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGRound extends ScriptNodeAPI_1.BaseNode{getOutput(e){return Math.floor(this.inputs[0]()+.5)}}exports.CGRound=CGRound;

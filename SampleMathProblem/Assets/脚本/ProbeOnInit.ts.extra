@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "db51e46c-6cb3-aae8-244f-0ab50791ffb7",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "ProbeOnInit",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]

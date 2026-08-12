@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGFloor=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGFloor extends ScriptNodeAPI_1.BaseNode{getOutput(){return Math.floor(this.inputs[0]())}}exports.CGFloor=CGFloor;

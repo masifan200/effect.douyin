@@ -1,1 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGNot=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGNot extends ScriptNodeAPI_1.BaseNode{getOutput(){return!this.inputs[0]()}}exports.CGNot=CGNot;

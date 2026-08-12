@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "6aa3b52d-41c9-eb54-402a-76f8b4d6c12d",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "QuizData",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]
