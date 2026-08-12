@@ -1,11 +1,11 @@
 [
   {
     "guid": {
-      "a": "6aa3b52d-41c9-eb54-402a-76f8b4d6c12d",
+      "a": "93ad16c3-cfb7-a643-b960-0777a2350542",
       "b": ""
     },
     "extraType": "ResItemJSScript",
-    "name": "QuizData",
+    "name": "QuizBridge",
     "version": "0.1.0",
     "authorizationInfo": "",
     "extendedInfo": {
