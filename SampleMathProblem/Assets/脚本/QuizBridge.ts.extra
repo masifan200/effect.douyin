@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "fc91bea6-4924-03e5-83ce-7242a9514164",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "QuizBridge",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]

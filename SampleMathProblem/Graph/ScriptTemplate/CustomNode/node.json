@@ -1,0 +1,48 @@
+{
+	"name": "Custom Node",
+	"id": "769b2f8d-5352-9ccf-3ec8-1ce94aac6dfe",
+	"inputs": [
+		{
+			"name": "Start Execution",
+			"type": "Pulse",
+			"description": "Execute the current custom node",
+			"displayType": "Exec",
+			"nameKey": "graph_custom_node_input_startexecution",
+			"descriptionKey": "graph_custom_node_input_startexecution_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next Step",
+			"type": "Pulse",
+			"description": "Execute subsequent nodes",
+			"displayType": "Exec",
+			"nameKey": "graph_custom_node_output_nextstep",
+			"descriptionKey": "graph_custom_node_output_nextstep_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"nodeEvent": [
+		"beforeStart",
+		"resetOnRecord"
+	],
+	"category": "Custom Node",
+	"version": "1.0.0",
+	"js": "CGCustomNode.js",
+	"builtinClass": "CustomNode",
+	"description": "Script logic can be implemented through TypeScript (TS) code, allowing users to configure input and output nodes.",
+	"onlineWebsite": "graph_custom_node_website",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"showInLibrary":["EHD-inhouse"],
+	"nameKey": "graph_custom_node_name",
+	"categoryKey": "graph_category_custom_node",
+	"descriptionKey": "graph_custom_node_description",
+    "contentFeature": [
+        "CustomNode"
+    ]
+}
