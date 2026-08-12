@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "6b2a846a-a446-9d6f-215d-6415970fab84",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "脚本",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": true
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

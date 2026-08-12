@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "ee38527b-e4fa-e804-f68e-357d598dbb53",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "SubLibs",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "80435a23-070d-52ab-4840-43c36bc090e9",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "PrintA",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "scriptAnnotation": [],
+    "needCompile": false,
+    "isUserScript": true
+  }
+]

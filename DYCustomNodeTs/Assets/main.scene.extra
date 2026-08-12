@@ -1,0 +1,480 @@
+[
+  {
+    "guid": {
+      "a": "c8709444-f042-56aa-33f0-eccea6622325",
+      "b": ""
+    },
+    "objGuid": "Guid(17892678610801857370, 559697082159424149)",
+    "extraType": "Entity",
+    "name": "摄像机",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "0231dbd7-9cea-0de3-4bf1-4389e8b83081",
+      "b": ""
+    },
+    "objGuid": "Guid(1029434961439008335, 6372224128272086966)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "f0c0cbc5-714b-ecde-7324-d50bbf7f085d",
+      "b": ""
+    },
+    "objGuid": "Guid(11334223170830842471, 5229456391885512585)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "48b573c1-41cb-2dc6-067d-e7a76129fc79",
+      "b": ""
+    },
+    "objGuid": "Guid(10827949423485651365, 543587625606924957)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      299.9999694824219,
+      269.99993896484375,
+      0.000020490573660936207
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "2197f1df-1d01-9e37-46fe-5f76a13b506d",
+      "b": ""
+    },
+    "objGuid": "Guid(8450613186836246685, 2374022434959017149)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      89.99998474121094,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "f4c33c75-68aa-4a5e-2920-80f0e77e29d0",
+      "b": ""
+    },
+    "objGuid": "Guid(11838096008824555924, 12959477363637171902)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "3513d890-a23c-4e8f-b7a6-0e912c9073f4",
+      "b": ""
+    },
+    "objGuid": "Guid(4200900767230796252, 8824734855884888739)",
+    "extraType": "Transform",
+    "name": "变换",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "f85eefcb-74d5-2110-885f-6dd9554031f8",
+      "b": ""
+    },
+    "objGuid": "Guid(12556560734000964803, 7508859945702231687)",
+    "extraType": "Camera",
+    "name": "Camera",
+    "rttiType": "Camera",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "enableMask": false,
+    "maskTexture": "00000000-0000-0000-0000-000000000802",
+    "isAnimatorBound": false
+  },
+  {
+    "guid": {
+      "a": "d83013cb-ecfe-0718-ae61-80e5695069fe",
+      "b": ""
+    },
+    "objGuid": "Guid(3261253174792506660, 16680708562180406145)",
+    "extraType": "Entity",
+    "name": "平行光",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "fddb34bf-e9de-aac8-dff9-ff30995d06f6",
+      "b": ""
+    },
+    "objGuid": "Guid(13350271480239526722, 3096813384112271290)",
+    "extraType": "DirectionalLight",
+    "name": "Directional Light",
+    "rttiType": "DirectionalLight",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "shadowAdvanceExpanded": false
+  },
+  {
+    "guid": {
+      "a": "d3f04acb-254b-12f8-e8dc-99afa941aae3",
+      "b": ""
+    },
+    "objGuid": "Guid(6001922123622865301, 10988972775475240365)",
+    "extraType": "Entity",
+    "name": "滤镜",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "59f70a16-58f1-41e6-5a09-549367db9f84",
+      "b": ""
+    },
+    "objGuid": "Guid(2325288330754824944, 7996174480901542058)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "b9460575-6a26-183f-d5ad-3987b0021126",
+      "b": ""
+    },
+    "objGuid": "Guid(13639343252843468561, 15376858728541308856)",
+    "extraType": "Transform",
+    "name": "Transform",
+    "rttiType": "Transform",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": false,
+    "editable": true,
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "linkage": 0,
+    "inspectorUICtx": "{}"
+  },
+  {
+    "guid": {
+      "a": "e4edc1e3-32a1-0e1f-2acd-9c7625252f5b",
+      "b": ""
+    },
+    "objGuid": "Guid(3550532450507407388, 16550606749064837278)",
+    "extraType": "EffectNode",
+    "name": "EffectNode",
+    "rttiType": "EffectNode",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "type": 2,
+    "sortMethod": 1
+  },
+  {
+    "guid": {
+      "a": "b37b2407-7255-0180-de1f-76897e6a337b",
+      "b": ""
+    },
+    "objGuid": "Guid(6722594625104010200, 12044535308668572812)",
+    "extraType": "Entity",
+    "name": "特效",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "0c6873d2-025e-1077-a669-7e9695b86e29",
+      "b": ""
+    },
+    "objGuid": "Guid(16593212906158014207, 12695832218773850522)",
+    "extraType": "EffectNode",
+    "name": "EffectNode",
+    "rttiType": "EffectNode",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "type": 5,
+    "sortMethod": 2
+  },
+  {
+    "guid": {
+      "a": "c8c108dd-12ea-384d-d367-d72733530f25",
+      "b": ""
+    },
+    "objGuid": "Guid(16522664609215718063, 5166303615544853155)",
+    "extraType": "Entity",
+    "name": "环境光",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_utility",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "a693890e-d7e1-6bf8-b449-c37a4d7ff4c5",
+      "b": ""
+    },
+    "objGuid": "Guid(9674530677230881193, 4089573138002405022)",
+    "extraType": "EnvironmentLighting",
+    "name": "EnvironmentLighting",
+    "rttiType": "Envmap",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
+      "a": "4efcfb05-5cd2-ee00-dcef-826adbc4380a",
+      "b": ""
+    },
+    "objGuid": "Guid(10468168447143099388, 2421878968654954127)",
+    "extraType": "Entity",
+    "name": "滤镜",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "rendergroup_filter",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "b76de2a3-439c-9725-b672-1cf45677ece2",
+      "b": ""
+    },
+    "objGuid": "Guid(17602736333192926066, 2945903151238259132)",
+    "extraType": "Camera",
+    "name": "Camera",
+    "rttiType": "Camera",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": false,
+    "editable": true,
+    "enableMask": false,
+    "maskTexture": "00000000-0000-0000-0000-000000000802",
+    "isAnimatorBound": false
+  },
+  {
+    "guid": {
+      "a": "3670937d-7d73-ef63-590c-eef34ffa1545",
+      "b": ""
+    },
+    "objGuid": "Guid(2831540867141770731, 1149731719277724838)",
+    "extraType": "FilterV2",
+    "name": "FilterV2",
+    "rttiType": "FilterV2",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
+      "a": "dfba8bf4-157c-ecec-36d0-3ccdd390dbad",
+      "b": ""
+    },
+    "objGuid": "Guid(17244150725803065420, 9694985339518483360)",
+    "extraType": "Entity",
+    "name": "立方体",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_utility",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "8df88fc8-50d0-d188-90db-5a7aea7f27f5",
+      "b": ""
+    },
+    "objGuid": "Guid(7225931928548978502, 8913474456696461718)",
+    "extraType": "MeshRenderer",
+    "name": "MeshRenderer",
+    "rttiType": "MeshRenderer",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "visualization": false,
+    "shadowMode": 0
+  },
+  {
+    "guid": {
+      "a": "ec6200e8-743e-0ceb-4681-64f96e478c73",
+      "b": ""
+    },
+    "objGuid": "Guid(523777951187539045, 8424031208512902053)",
+    "extraType": "Entity",
+    "name": "立方体_1",
+    "rttiType": "SceneObject",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none",
+    "isAnimatorBound": false,
+    "modelGUID": "",
+    "createdEffectNodeKey": "effect_node_utility",
+    "isHeadBindingRenderRoot": false
+  },
+  {
+    "guid": {
+      "a": "ed211ef3-3e03-4531-6bce-a6b6cc2244c3",
+      "b": ""
+    },
+    "objGuid": "Guid(14215260861000769157, 6677671445616942756)",
+    "extraType": "MeshRenderer",
+    "name": "网格渲染",
+    "rttiType": "MeshRenderer",
+    "version": "0.2.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "editable": true,
+    "visualization": false,
+    "shadowMode": 0
+  }
+]

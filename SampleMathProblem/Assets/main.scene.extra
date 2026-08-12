@@ -579,7 +579,7 @@
     "version": "0.1.0",
     "rttiType": "DynamicComponent",
     "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
+    "_lazyUpgrateVersion": "0.1.0",
     "extendedInfo": {
       "isVisibleInInspector": true,
       "expanded": true
@@ -2084,5 +2084,23 @@
     "sortMethod": 1,
     "enableInputTexture": false,
     "inputTexture": "00000000-0000-0000-0000-00000000004b"
+  },
+  {
+    "guid": {
+      "a": "eb6c74d2-a768-851c-40ef-ac9fded80919",
+      "b": ""
+    },
+    "objGuid": "Guid(5021829125769741453, 11735012981392688549)",
+    "extraType": "UserComponentEditor",
+    "name": "Init",
+    "version": "0.1.0",
+    "rttiType": "Init",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "resGuid": "db51e46c-6cb3-aae8-244f-0ab50791ffb7"
   }
 ]

@@ -1,0 +1,1100 @@
+{
+	"curContainerId": "93b79bf1-41b1-b45c-97dc-1e8471683c3d",
+	"version": "4.2.0",
+	"containers": [
+		{
+			"__class": "Container",
+			"__uniqueId": "93b79bf1-41b1-b45c-97dc-1e8471683c3d",
+			"_IdentityId": "ad4cc2ce-a61a-9137-ed8d-fc256ede814f",
+			"graph": {
+				"__class": "ScriptGraph",
+				"__uniqueId": "ab298d55-5b8f-886c-ce09-deb389ad1927",
+				"_IdentityId": "52c7a9f5-ed86-74be-a6ec-f8474bace43e",
+				"panelName": "可视化编程面板",
+				"graphType": "SCRIPT",
+				"editable": true,
+				"transform": {
+					"a": 0.8799999999999999,
+					"b": 0,
+					"c": 0,
+					"d": 0.8799999999999999,
+					"e": -43962.91707982768,
+					"f": -43747.13531644713
+				},
+				"transformLocal": {
+					"a": 0.8799999999999999,
+					"b": 0,
+					"c": 0,
+					"d": 0.8799999999999999,
+					"e": -44203.91707982768,
+					"f": -44158.13531644713
+				},
+				"scaleTransformLocal": {
+					"a": 1,
+					"b": 0,
+					"c": 0,
+					"d": 1,
+					"e": 0,
+					"f": 0
+				},
+				"nodeList": [
+					{
+						"__class": "ScriptTemplateNode",
+						"__uniqueId": "484eab12-35c2-25eb-b91d-82204d2980e3",
+						"_IdentityId": "5ea0ac8c-3cc7-16b1-6503-a5f3c47952a0",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 49910.318181818184,
+							"y": 50151.40909090909
+						},
+						"name": "Update",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 171,
+							"height": 92
+						},
+						"description": "Execute the next node in every frame.",
+						"category": "Event",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "32fb5086-cc29-7220-d2b8-23f352fa95fd",
+								"_IdentityId": "5ac39155-d6d1-610d-3b38-6cdb1d7fe813",
+								"portName": "Next",
+								"type": "CONTROL",
+								"isInput": false,
+								"isConnected": true,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50067.318181818184,
+									"y": 50199.40909090909
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [
+									"6eb2db03-4ed9-9c72-dcdd-02cd7965fb45"
+								],
+								"owner": {
+									"__referenceId": "484eab12-35c2-25eb-b91d-82204d2980e3"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "下一步",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "b605aa04-3bc5-910f-6a7b-5268588a296e",
+								"_IdentityId": "dd5766dc-706e-e277-b453-183906911636",
+								"portName": "Delta Time",
+								"type": "DATA",
+								"isInput": false,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50067.318181818184,
+									"y": 50223.40909090909
+								},
+								"valueTypeName": "Double",
+								"portIndex": 1,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "484eab12-35c2-25eb-b91d-82204d2980e3"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "时间差",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "每帧执行（Update）",
+						"nodeName": "",
+						"templateGuid": "76dd06cb-6f7a-60eb-e2fa-c9b10a0c78fc",
+						"curSelectedType": "",
+						"containResource": false,
+						"version": "1.0.1",
+						"compatibleState": 0,
+						"addableInputConfig": null,
+						"addableOutputConfig": null,
+						"portAddable": 0
+					},
+					{
+						"__class": "ScriptTemplateNode",
+						"__uniqueId": "ddb1b2f4-6baf-a532-4db3-f48398545d7a",
+						"_IdentityId": "c9e27834-1f79-141b-6a58-e4a5947a08c5",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 50237,
+							"y": 50132.63636363636
+						},
+						"name": "Start",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 164,
+							"height": 84
+						},
+						"description": "Execute the next node when an effect starts.",
+						"category": "Event",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "4df5196b-abe0-f5e5-601e-35b29fe9a8bf",
+								"_IdentityId": "a8b3c08f-b303-ef21-aef6-b003a311c7b3",
+								"portName": "Next",
+								"type": "CONTROL",
+								"isInput": false,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50387,
+									"y": 50180.63636363636
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "ddb1b2f4-6baf-a532-4db3-f48398545d7a"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "下一步",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "开始",
+						"nodeName": "",
+						"templateGuid": "2f0fed0f-5279-9602-3083-5e1fb8163563",
+						"curSelectedType": "",
+						"containResource": false,
+						"version": "1.0.1",
+						"compatibleState": 0,
+						"addableInputConfig": null,
+						"addableOutputConfig": null,
+						"portAddable": 0
+					},
+					{
+						"__class": "ScriptTemplateNode",
+						"__uniqueId": "e611e6b9-29d5-53b2-b320-b1982d46f724",
+						"_IdentityId": "c37c5246-96bb-4e16-ca0f-61d15ee16527",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 50448.63263604576,
+							"y": 50257.971992122955
+						},
+						"name": "Peek",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 164,
+							"height": 96
+						},
+						"description": "Monitor and display the value of the input in real time, or output the value to another node. Supported types: Number, Boolean, Vec2, Vec3, Vec4, Color, String, and Rect.",
+						"category": "Utility",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "8d4633c1-281b-2f13-85f5-a6b54287c2c4",
+								"_IdentityId": "a786f9b1-87d1-559f-c105-8aa9b1fea081",
+								"portName": "Data",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": true,
+								"isDynamic": true,
+								"centerPosition": {
+									"x": 50462.63263604576,
+									"y": 50331.971992122955
+								},
+								"valueTypeName": "Double",
+								"portIndex": 0,
+								"portValue": {
+									"type": "Number",
+									"value": 3
+								},
+								"visible": true,
+								"refEdgeIds": [
+									"df6637ca-9641-19e8-dbfa-14f911003578"
+								],
+								"owner": {
+									"__referenceId": "e611e6b9-29d5-53b2-b320-b1982d46f724"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "数据",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "f0929b73-4243-cb48-079a-c611aab58671",
+								"_IdentityId": "b7749f95-d2c6-4c4b-0f1f-de64f87effc3",
+								"portName": "Data",
+								"type": "DATA",
+								"isInput": false,
+								"isConnected": false,
+								"isDynamic": true,
+								"centerPosition": {
+									"x": 50598.63263604576,
+									"y": 50305.971992122955
+								},
+								"valueTypeName": "Double",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "e611e6b9-29d5-53b2-b320-b1982d46f724"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "数据",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "查看数据",
+						"nodeName": "",
+						"templateGuid": "84CEBF56-60A1-4C3D-8064-4D10B9D91581",
+						"curSelectedType": "Double",
+						"containResource": false,
+						"version": "1.0.1",
+						"compatibleState": 0,
+						"addableInputConfig": null,
+						"addableOutputConfig": null,
+						"portAddable": 0
+					},
+					{
+						"__class": "VariableNode",
+						"__uniqueId": "a3594f19-23ea-607f-427b-f256fef0c5ca",
+						"_IdentityId": "f51558ef-aad8-be0a-6e80-e3bc477b5e98",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 50117.17809059118,
+							"y": 50264.790173941146
+						},
+						"name": "number",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 164,
+							"height": 148
+						},
+						"description": "",
+						"category": "Variable",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "a832d4f4-2a56-e298-e4ba-99d26129cd91",
+								"_IdentityId": "faf5eb82-5c33-8d1d-ebd7-ba651cbf6fb7",
+								"portName": "Set",
+								"type": "CONTROL",
+								"isInput": true,
+								"isConnected": true,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50131.17809059118,
+									"y": 50362.790173941146
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": {
+									"type": "Pulse",
+									"value": false
+								},
+								"visible": true,
+								"refEdgeIds": [
+									"6eb2db03-4ed9-9c72-dcdd-02cd7965fb45"
+								],
+								"owner": {
+									"__referenceId": "a3594f19-23ea-607f-427b-f256fef0c5ca"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "设置",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "99c41158-04a9-4f7f-f218-a1910ac72015",
+								"_IdentityId": "62398f85-854b-46b9-7d66-e53779112b44",
+								"portName": "Value",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50131.17809059118,
+									"y": 50390.790173941146
+								},
+								"valueTypeName": "Double",
+								"portIndex": 1,
+								"portValue": {
+									"type": "Number",
+									"value": 3
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "a3594f19-23ea-607f-427b-f256fef0c5ca"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "值",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "c773abff-8e07-4330-b37f-9b6dca59e9a0",
+								"_IdentityId": "cbea6e70-d6ab-e2fb-372c-af37c9730b85",
+								"portName": "Trigger",
+								"type": "CONTROL",
+								"isInput": false,
+								"isConnected": true,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50267.17809059118,
+									"y": 50312.790173941146
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [
+									"2a2824a2-3ca4-f859-ad81-285714605bd8"
+								],
+								"owner": {
+									"__referenceId": "a3594f19-23ea-607f-427b-f256fef0c5ca"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "触发",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "ecc066a8-c302-10d5-223b-fb58cbb7a805",
+								"_IdentityId": "4b46d19f-d0a1-ac01-1ad7-f932723899a7",
+								"portName": "Value",
+								"type": "DATA",
+								"isInput": false,
+								"isConnected": true,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50267.17809059118,
+									"y": 50336.790173941146
+								},
+								"valueTypeName": "Double",
+								"portIndex": 1,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [
+									"df6637ca-9641-19e8-dbfa-14f911003578"
+								],
+								"owner": {
+									"__referenceId": "a3594f19-23ea-607f-427b-f256fef0c5ca"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "值",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "number",
+						"nodeName": "",
+						"accessType": "SETTER",
+						"variable": {
+							"__class": "GraphVariable",
+							"__uniqueId": "28ff0a27-9ff8-c0bf-9ec0-15d2fc9ed4a1",
+							"_IdentityId": "8737f22b-5944-45a7-42f0-c3afb421359a",
+							"isPublic": false,
+							"variableType": "Number",
+							"variableName": "number",
+							"isLocal": false,
+							"isArray": false,
+							"isArrayExpanded": true,
+							"initialValue": 5,
+							"owner": null,
+							"settings": [
+								{
+									"key": "graph_details_basic_setting",
+									"property": [
+										{
+											"type": "String",
+											"section": "graph_details_basic_setting",
+											"key": "graph_details_basic_setting_name",
+											"value": "number",
+											"attribute": {},
+											"editable": true,
+											"isTypeKey": false
+										},
+										{
+											"type": "StringList",
+											"section": "graph_details_basic_setting",
+											"key": "graph_details_basic_setting_type",
+											"value": "Number",
+											"attribute": {
+												"option": [
+													{
+														"key": "数值",
+														"value": "Number"
+													},
+													{
+														"key": "布尔值",
+														"value": "Boolean"
+													},
+													{
+														"key": "字符串",
+														"value": "String"
+													},
+													{
+														"key": "颜色",
+														"value": "Color"
+													},
+													{
+														"key": "二维向量",
+														"value": "Vec2"
+													},
+													{
+														"key": "三维向量",
+														"value": "Vec3"
+													},
+													{
+														"key": "四维向量",
+														"value": "Vec4"
+													},
+													{
+														"key": "矩形",
+														"value": "Rect"
+													},
+													{
+														"key": "纹理",
+														"value": "Texture"
+													},
+													{
+														"key": "场景对象",
+														"value": "Scene Object"
+													}
+												]
+											},
+											"editable": true,
+											"isTypeKey": false
+										},
+										{
+											"type": "StringList",
+											"section": "graph_details_basic_setting",
+											"key": "graph_details_basic_setting_container",
+											"value": "Single",
+											"attribute": {
+												"option": [
+													{
+														"key": "单独",
+														"value": "Single"
+													},
+													{
+														"key": "数组",
+														"value": "Array"
+													}
+												]
+											},
+											"editable": true,
+											"isTypeKey": false
+										},
+										{
+											"type": "Value",
+											"section": "graph_details_basic_setting",
+											"key": "graph_details_basic_setting_default_value",
+											"value": 5,
+											"attribute": {
+												"labelNumberOfLines": 1,
+												"graphAttr": {
+													"usedInGraph": true,
+													"usedInVariable": true
+												},
+												"accuracy": 3,
+												"height": 24,
+												"hexInput": false,
+												"showDecimalZero": true,
+												"objectPickerAttr": {}
+											},
+											"editable": true,
+											"otherProps": {},
+											"isTypeKey": false
+										}
+									]
+								}
+							],
+							"showInPanel": false
+						}
+					},
+					{
+						"__class": "VariableNode",
+						"__uniqueId": "03b8f862-c1a9-2520-3e2e-906ccc188e89",
+						"_IdentityId": "588c75ec-5df8-9659-ed30-b14c6ae34965",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 49997.859894901405,
+							"y": 50543.01719004335
+						},
+						"name": "number",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 164,
+							"height": 84
+						},
+						"description": "",
+						"category": "Variable",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "343315bb-3b72-910b-b0c0-9322997d5aaf",
+								"_IdentityId": "19710e4c-f26f-2a91-fe51-8371d7a6abbd",
+								"portName": "Value",
+								"type": "DATA",
+								"isInput": false,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50147.859894901405,
+									"y": 50591.01719004335
+								},
+								"valueTypeName": "Double",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "03b8f862-c1a9-2520-3e2e-906ccc188e89"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "值",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "number",
+						"nodeName": "",
+						"accessType": "GETTER",
+						"variable": {
+							"__referenceId": "28ff0a27-9ff8-c0bf-9ec0-15d2fc9ed4a1"
+						}
+					},
+					{
+						"__class": "CustomNode",
+						"__uniqueId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0",
+						"_IdentityId": "8afbe739-5eee-4d61-dace-fc367001e4a7",
+						"nodeType": "SCRIPT",
+						"position": {
+							"x": 50377.7694088951,
+							"y": 50436.8810414172
+						},
+						"name": "CustomNode",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"size": {
+							"width": 302,
+							"height": 264
+						},
+						"description": "custom node defined by a javascript file",
+						"category": "Custom",
+						"deletable": true,
+						"cloneable": true,
+						"inputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "eac55956-3ae7-19f6-c9d4-77cf52bf2fc6",
+								"_IdentityId": "f3f17a8d-b2c2-227e-3210-616c0ec351d6",
+								"portName": "Enter",
+								"type": "CONTROL",
+								"isInput": true,
+								"isConnected": true,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50510.8810414172
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": {
+									"type": "Pulse",
+									"value": false
+								},
+								"visible": true,
+								"refEdgeIds": [
+									"2a2824a2-3ca4-f859-ad81-285714605bd8"
+								],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "graph_custom_node_input_enter",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "ab3a46c3-c06f-400b-6d1f-128efe222529",
+								"_IdentityId": "0463fdc7-e1d7-61da-391b-a3abe603f767",
+								"portName": "speed",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50538.8810414172
+								},
+								"valueTypeName": "Double",
+								"portIndex": 1,
+								"portValue": {
+									"type": "Number",
+									"value": 3
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "speed",
+								"defaultDisplayType": "数值",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "c013ba09-e21b-604a-5a9a-a60ff41685c5",
+								"_IdentityId": "1ac98b5e-35cc-1c8d-5781-29e1c489617e",
+								"portName": "object",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50566.8810414172
+								},
+								"valueTypeName": "Entity",
+								"portIndex": 2,
+								"portValue": {
+									"type": "Entity",
+									"value": ""
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "object",
+								"defaultDisplayType": "场景对象",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "08957448-5f3a-c041-ef5b-824090201152",
+								"_IdentityId": "ad3834d1-1d5b-c6d7-ea45-18656b384530",
+								"portName": "cubeTrans",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50594.8810414172
+								},
+								"valueTypeName": "Transform",
+								"portIndex": 3,
+								"portValue": {
+									"type": "Component",
+									"value": "Guid(11838096008824555924, 12959477363637171902)"
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "cubeTrans",
+								"defaultDisplayType": "变换",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "855a280b-f8d1-3859-86cd-98b9460632e2",
+								"_IdentityId": "b2994ff0-c673-89ee-41be-8afac34432f6",
+								"portName": "cubeTrans1",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50622.8810414172
+								},
+								"valueTypeName": "Transform",
+								"portIndex": 4,
+								"portValue": {
+									"type": "Component",
+									"value": "Guid(4200900767230796252, 8824734855884888739)"
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "cubeTrans1",
+								"defaultDisplayType": "变换",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "fd0ea47a-b45e-7b29-7661-67d31ee18202",
+								"_IdentityId": "037c0cc1-4281-25c6-8885-b6da9b5d3d8c",
+								"portName": "pos",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50650.8810414172
+								},
+								"valueTypeName": "Vector3f",
+								"portIndex": 5,
+								"portValue": {
+									"type": "Vector3f",
+									"value": {
+										"x": 0,
+										"y": 0,
+										"z": 0
+									}
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "pos",
+								"defaultDisplayType": "三维向量",
+								"defaultValueList": [],
+								"addManually": false
+							},
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "73f9032e-6311-c274-29ba-e73f1ddc05c8",
+								"_IdentityId": "8c363ca6-1e8a-d99c-fec6-f6c2e0c0f9fc",
+								"portName": "switch",
+								"type": "DATA",
+								"isInput": true,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50391.7694088951,
+									"y": 50678.8810414172
+								},
+								"valueTypeName": "Bool",
+								"portIndex": 6,
+								"portValue": {
+									"type": "Bool",
+									"value": true
+								},
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "switch",
+								"defaultDisplayType": "布尔值",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"outputPorts": [
+							{
+								"__class": "ScriptPort",
+								"__uniqueId": "3e2edc4b-aced-f657-4450-bd1202645c0d",
+								"_IdentityId": "af3c4a37-5da0-7389-82bd-570950323311",
+								"portName": "Next",
+								"type": "CONTROL",
+								"isInput": false,
+								"isConnected": false,
+								"isDynamic": false,
+								"centerPosition": {
+									"x": 50665.7694088951,
+									"y": 50484.8810414172
+								},
+								"valueTypeName": "Pulse",
+								"portIndex": 0,
+								"portValue": null,
+								"visible": true,
+								"refEdgeIds": [],
+								"owner": {
+									"__referenceId": "9e0cbe3c-8353-efe7-5f7d-6cb8b12e12b0"
+								},
+								"hideInput": false,
+								"isArray": false,
+								"singleValueType": "Default",
+								"generic": null,
+								"valueList": [],
+								"valueListKeys": [],
+								"defaultDisplayName": "graph_custom_node_output_next",
+								"defaultDisplayType": "执行",
+								"defaultValueList": [],
+								"addManually": false
+							}
+						],
+						"error": false,
+						"groupEnable": true,
+						"renamable": false,
+						"nodeSettings": [],
+						"defaultDisplayName": "Untitled",
+						"nodeName": "",
+						"templateGuid": "769b2f8d-5352-9ccf-3ec8-1ce94aac6dfe",
+						"curSelectedType": "",
+						"containResource": false,
+						"version": "1.0.0",
+						"compatibleState": 0,
+						"addableInputConfig": null,
+						"addableOutputConfig": null,
+						"portAddable": 0,
+						"resourceId": "eea7e5d0-317f-0010-95b5-cd64dc734447",
+						"userScriptName": "Untitled"
+					}
+				],
+				"edgeList": [
+					{
+						"__class": "Edge",
+						"__uniqueId": "df6637ca-9641-19e8-dbfa-14f911003578",
+						"_IdentityId": "8a926e2a-a235-a039-c336-991f62ffd2b6",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"type": "BEZIER",
+						"sourcePortPosition": {
+							"x": 50267.17809059118,
+							"y": 50336.790173941146
+						},
+						"targetPortPosition": {
+							"x": 50462.63263604576,
+							"y": 50331.971992122955
+						},
+						"sourcePortId": "ecc066a8-c302-10d5-223b-fb58cbb7a805",
+						"targetPortId": "8d4633c1-281b-2f13-85f5-a6b54287c2c4",
+						"isValid": true
+					},
+					{
+						"__class": "Edge",
+						"__uniqueId": "6eb2db03-4ed9-9c72-dcdd-02cd7965fb45",
+						"_IdentityId": "364cc7b6-3477-e2d4-2fd6-6031828edf0b",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"type": "BEZIER",
+						"sourcePortPosition": {
+							"x": 50067.318181818184,
+							"y": 50199.40909090909
+						},
+						"targetPortPosition": {
+							"x": 50131.17809059118,
+							"y": 50362.790173941146
+						},
+						"sourcePortId": "32fb5086-cc29-7220-d2b8-23f352fa95fd",
+						"targetPortId": "a832d4f4-2a56-e298-e4ba-99d26129cd91",
+						"isValid": true
+					},
+					{
+						"__class": "Edge",
+						"__uniqueId": "2a2824a2-3ca4-f859-ad81-285714605bd8",
+						"_IdentityId": "0219e7ea-565a-5fdf-f317-c4c17e28938b",
+						"owner": {
+							"__referenceId": "ab298d55-5b8f-886c-ce09-deb389ad1927"
+						},
+						"type": "BEZIER",
+						"sourcePortPosition": {
+							"x": 50267.17809059118,
+							"y": 50312.790173941146
+						},
+						"targetPortPosition": {
+							"x": 50391.7694088951,
+							"y": 50510.8810414172
+						},
+						"sourcePortId": "c773abff-8e07-4330-b37f-9b6dca59e9a0",
+						"targetPortId": "eac55956-3ae7-19f6-c9d4-77cf52bf2fc6",
+						"isValid": true
+					}
+				],
+				"owner": {
+					"__referenceId": "93b79bf1-41b1-b45c-97dc-1e8471683c3d"
+				},
+				"showMiniMap": false,
+				"isHandleMode": false,
+				"graphCursorType": 0,
+				"variableList": [
+					{
+						"__referenceId": "28ff0a27-9ff8-c0bf-9ec0-15d2fc9ed4a1"
+					}
+				],
+				"localVariableList": [],
+				"showVariablePanel": false,
+				"showSubGraphPanel": false
+			},
+			"parent": null,
+			"title": "主图",
+			"containerType": 0
+		}
+	],
+	"panelClosed": false,
+	"panelCollapsed": false,
+	"minimapOpen": false
+}

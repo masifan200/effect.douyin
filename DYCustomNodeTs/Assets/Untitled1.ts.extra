@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "82ff59a7-37c7-030a-a713-52c02def1c75",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "Untitled1",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "scriptAnnotation": [],
+    "needCompile": false,
+    "isUserScript": true
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "79cd80bb-73a6-fe99-daf5-ff0e3c4d8510",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Libs",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

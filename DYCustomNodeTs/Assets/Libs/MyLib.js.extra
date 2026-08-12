@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "db23c27e-7bc5-ec79-7a3b-b5ea1d07ca32",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "MyLib",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "scriptAnnotation": [],
+    "needCompile": false,
+    "isUserScript": true
+  }
+]

@@ -301,7 +301,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5330477222336224677, b: 18256804132706583203}
+            guid: {a: 5590279565780360645, b: 13943665072450395568}
             utf8: !<str> 5
             initialPosition: {x: -1870.834, y: -6.25}
             position: {x: -1870.834, y: -6.25}
@@ -313,7 +313,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4795345345750873606, b: 10249603182449958317}
+            guid: {a: 5685748984825909132, b: 16158328598493509534}
             utf8: !<str> 0
             initialPosition: {x: -1272.396, y: 0}
             position: {x: -1272.396, y: 0}
@@ -325,7 +325,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5020083068562427384, b: 18347077540327808930}
+            guid: {a: 5045912807096676194, b: 4580328218124466841}
             utf8: !<str> +
             initialPosition: {x: -611.4586, y: -21.35413}
             position: {x: -611.4586, y: -21.35413}
@@ -337,7 +337,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5006307529740142163, b: 15587628452696342403}
+            guid: {a: 4612806424649193344, b: 11893219121478011821}
             utf8: !<str> 4
             initialPosition: {x: 38.54156, y: 0}
             position: {x: 38.54156, y: 0}
@@ -349,7 +349,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4646006497086539378, b: 851904926904196491}
+            guid: {a: 5256548596649691073, b: 1481419453173177245}
             utf8: !<str> 9
             initialPosition: {x: 618.7496, y: 6.25}
             position: {x: 618.7496, y: 6.25}
@@ -361,7 +361,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5663388730567638890, b: 9505917113546207145}
+            guid: {a: 5382175699944448815, b: 6529517517490108823}
             utf8: !<str> =
             initialPosition: {x: 1271.875, y: -20.83334}
             position: {x: 1271.875, y: -20.83334}
@@ -373,7 +373,7 @@ entities:
             letterStyle: {localId: 31}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5535718286301655565, b: 16019463873687207}
+            guid: {a: 5248147816973879769, b: 17942985991643796665}
             utf8: !<str> "?"
             initialPosition: {x: 1893.751, y: 6.25}
             position: {x: 1893.751, y: 6.25}
@@ -568,7 +568,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5422378126863157670, b: 12784583363881613447}
+            guid: {a: 5715379763098364006, b: 17965505604418410412}
             utf8: !<str> 9
             initialPosition: {x: -296.875, y: 6.25}
             position: {x: -296.875, y: 6.25}
@@ -580,7 +580,7 @@ entities:
             letterStyle: {localId: 37}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5104496109232950237, b: 6717176964794314625}
+            guid: {a: 4972957893787808713, b: 14231856602968880553}
             utf8: !<str> 9
             initialPosition: {x: 286.4583, y: 6.25}
             position: {x: 286.4583, y: 6.25}
@@ -867,7 +867,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4731817955800228756, b: 13919531705857468818}
+            guid: {a: 4758893574334729462, b: 5466766971236432053}
             utf8: !<str> 9
             initialPosition: {x: -299.4791, y: 6.25}
             position: {x: -299.4791, y: 6.25}
@@ -879,7 +879,7 @@ entities:
             letterStyle: {localId: 44}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5733277307321312485, b: 107857506446676614}
+            guid: {a: 5501178655648734691, b: 17066118841316365712}
             utf8: !<str> 8
             initialPosition: {x: 291.6667, y: 0}
             position: {x: 291.6667, y: 0}
@@ -1128,6 +1128,11 @@ entities:
         guid: {a: 5457885353813915454, b: 4392889087454985864}
         enabled: true
         className: !<str> 80ab63d4-5b9a-2e57-a85d-f6c78acb3ef6
+      - __class: DynamicComponent
+        name: !<str> ""
+        guid: {a: 5021829125769741453, b: 11735012981392688549}
+        enabled: true
+        className: !<str> db51e46c-6cb3-aae8-244f-0ab50791ffb7
     layer: 0
   - __class: Entity
     name: !<str> 面部面具摄像机
@@ -1163,7 +1168,7 @@ entities:
         zFar: 1000
         renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
         isRootCamera: false
-        maskMaterial: {localId: 1, path: ce41e8fe-e60a-7904-cf88-a16728b1a250--ce41e8fe-e60a-7904-cf88-a16728b1a250.material}
+        maskMaterial: {localId: 1, path: 962d1696-9534-aa44-882c-8e38df77b9ef--962d1696-9534-aa44-882c-8e38df77b9ef.material}
         sortMethod:
           __class: CameraSortMethod
           value: STRICT_SORT_ORDER
@@ -1194,7 +1199,7 @@ entities:
             enableCustomBindingInput: false
             faceFittingFOV: 60
             faceIndex: 0
-            graphName: !<str> AlSubGraph_Wed12Aug2026023442GMT37j5zf
+            graphName: !<str> AlSubGraph_Wed12Aug2026064738GMT999gdf0
         enabled: true
         className: !<str> FaceBinding
       - __class: MeshRenderer
@@ -1221,11 +1226,11 @@ entities:
         properties:
           __class: Map
           OutputRT: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
-          algoGraphName: !<str> AlSubGraph_Wed12Aug2026023442GMT3807b1
+          algoGraphName: !<str> AlSubGraph_Wed12Aug2026064738GMT999e17d
           extraType: !<str> FaceFitting3DJS
           faceIds: [0, 1]
           femaleIntensity: 1
-          graphName: !<str> AlSubGraph_Wed12Aug2026023442GMT3807b1
+          graphName: !<str> AlSubGraph_Wed12Aug2026064738GMT999e17d
           intensity: 1
           maleIntensity: 1
           mirror: false
@@ -1280,7 +1285,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5308012603959113148, b: 8150723271416940428}
+            guid: {a: 4715478134535454129, b: 10569299379745814943}
             utf8: !<str> 左
             initialPosition: {x: -4867.36, y: 20.83319}
             position: {x: -4867.36, y: 20.83319}
@@ -1292,7 +1297,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5336241757176401878, b: 12847462293421450150}
+            guid: {a: 5469789485507906756, b: 1321681736721553291}
             utf8: !<str> 右
             initialPosition: {x: -3478.472, y: 13.88879}
             position: {x: -3478.472, y: 13.88879}
@@ -1304,7 +1309,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4892919455294869081, b: 16659315690494676889}
+            guid: {a: 5073242013114451045, b: 12941273111019209887}
             utf8: !<str> 摇
             initialPosition: {x: -2103.472, y: 2.77771}
             position: {x: -2103.472, y: 2.77771}
@@ -1316,7 +1321,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4702455696874787866, b: 9408140867641887928}
+            guid: {a: 5633596161328507177, b: 11565983688316205214}
             utf8: !<str> 头
             initialPosition: {x: -691.6665, y: -6.103516e-05}
             position: {x: -691.6665, y: -6.103516e-05}
@@ -1328,7 +1333,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5625639880285412016, b: 16233346341740193467}
+            guid: {a: 4645245949212524483, b: 11292452340028384174}
             utf8: !<str> 进
             initialPosition: {x: 693.75, y: -2.777832}
             position: {x: 693.75, y: -2.777832}
@@ -1340,7 +1345,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5733804422802283421, b: 14025718432432494506}
+            guid: {a: 4961258581733066436, b: 6637921726191823518}
             utf8: !<str> 行
             initialPosition: {x: 2074.305, y: -4.166748}
             position: {x: 2074.305, y: -4.166748}
@@ -1352,7 +1357,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5655500263493485844, b: 14593882570932623290}
+            guid: {a: 5067547899711290504, b: 17205094087011713424}
             utf8: !<str> 选
             initialPosition: {x: 3472.222, y: -3.47229}
             position: {x: 3472.222, y: -3.47229}
@@ -1364,7 +1369,7 @@ entities:
             letterStyle: {localId: 51}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5638070972471054838, b: 3732406021873580696}
+            guid: {a: 5054620712861220980, b: 18211827839396897955}
             utf8: !<str> 择
             initialPosition: {x: 4853.472, y: 0.694397}
             position: {x: 4853.472, y: 0.694397}
@@ -1816,7 +1821,7 @@ entities:
         letters:
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4712184841286059956, b: 13053550316028983683}
+            guid: {a: 5024544707941930527, b: 5975441053992574082}
             utf8: !<str> 小
             initialPosition: {x: -4678.126, y: 3.125}
             position: {x: -4678.126, y: 3.125}
@@ -1828,7 +1833,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5253652057643518880, b: 6448226938439552644}
+            guid: {a: 5111720426960102055, b: 12471443462571896486}
             utf8: !<str> 学
             initialPosition: {x: -3647.917, y: 0.520813}
             position: {x: -3647.917, y: 0.520813}
@@ -1840,7 +1845,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4914968587440414769, b: 6726622259165588612}
+            guid: {a: 5333783381531468369, b: 1311342482101460352}
             utf8: !<str> 生
             initialPosition: {x: -2611.459, y: 17.1875}
             position: {x: -2611.459, y: 17.1875}
@@ -1852,7 +1857,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4823016593110103950, b: 7259555265049241741}
+            guid: {a: 4705321002770572618, b: 11136290954008425149}
             utf8: !<str> 一
             initialPosition: {x: -1563.022, y: 44.79166}
             position: {x: -1563.022, y: 44.79166}
@@ -1864,7 +1869,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5744890999661904008, b: 14434218842712521919}
+            guid: {a: 5115757079745638133, b: 7323799351570005121}
             utf8: !<str> 百
             initialPosition: {x: -521.3544, y: -6.25}
             position: {x: -521.3544, y: -6.25}
@@ -1876,7 +1881,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4650270797326158651, b: 13816589540490857123}
+            guid: {a: 4937724741757447856, b: 1001419274534743437}
             utf8: !<str> 以
             initialPosition: {x: 519.7916, y: -7.812439}
             position: {x: 519.7916, y: -7.812439}
@@ -1888,7 +1893,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 5043385469245451262, b: 840550415601372856}
+            guid: {a: 4671758806952852463, b: 4795480959746534318}
             utf8: !<str> 内
             initialPosition: {x: 1562.5, y: 6.103516e-05}
             position: {x: 1562.5, y: 6.103516e-05}
@@ -1900,7 +1905,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4798455475231572006, b: 8357584842959721357}
+            guid: {a: 5304351367619315384, b: 16495260873255669664}
             utf8: !<str> 加
             initialPosition: {x: 2567.188, y: 6.103516e-05}
             position: {x: 2567.188, y: 6.103516e-05}
@@ -1912,7 +1917,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4615734017630325151, b: 7341102893850524557}
+            guid: {a: 5016031201531349983, b: 49732014714935427}
             utf8: !<str> 减
             initialPosition: {x: 3637.501, y: -11.45831}
             position: {x: 3637.501, y: -11.45831}
@@ -1924,7 +1929,7 @@ entities:
             letterStyle: {localId: 65}
           - __class: Letter
             name: !<str> ""
-            guid: {a: 4735464212531531598, b: 16695811664274934921}
+            guid: {a: 4939428060215487705, b: 18315027008821105336}
             utf8: !<str> 法
             initialPosition: {x: 4688.022, y: -1.5625}
             position: {x: 4688.022, y: -1.5625}

@@ -1,0 +1,80 @@
+[
+  {
+    "guid": {
+      "a": "eea7e5d0-317f-0010-95b5-cd64dc734447",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "Untitled",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "scriptAnnotation": [
+      {
+        "tag": "input",
+        "type": "Number",
+        "name": "speed",
+        "property": {
+          "line": 12,
+          "display": "numberbox",
+          "default": "3"
+        }
+      },
+      {
+        "tag": "input",
+        "type": "Entity",
+        "name": "object",
+        "property": {
+          "line": 17,
+          "display": "object_picker",
+          "label": "object"
+        }
+      },
+      {
+        "tag": "input",
+        "type": "Transform",
+        "name": "cubeTrans",
+        "property": {
+          "line": 20,
+          "display": "object_picker"
+        }
+      },
+      {
+        "tag": "input",
+        "type": "Transform",
+        "name": "cubeTrans1",
+        "property": {
+          "line": 23,
+          "display": "object_picker"
+        }
+      },
+      {
+        "tag": "input",
+        "type": "Vector3f",
+        "name": "pos",
+        "property": {
+          "line": 26,
+          "display": "vec3",
+          "default": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "tag": "input",
+        "type": "Boolean",
+        "name": "switch",
+        "property": {
+          "line": 31,
+          "display": "checkbox"
+        }
+      }
+    ],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]
