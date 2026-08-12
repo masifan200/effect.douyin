@@ -570,6 +570,24 @@
   },
   {
     "guid": {
+      "a": "f9047478-25a2-1e3c-dc6b-2a1e1b4792a0",
+      "b": ""
+    },
+    "objGuid": "Guid(5457885353813915454, 4392889087454985864)",
+    "extraType": "UserComponentEditor",
+    "name": "脚本异常",
+    "version": "0.1.0",
+    "rttiType": "DynamicComponent",
+    "editable": true,
+    "_lazyUpgrateVersion": "0.0.0",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "expanded": true
+    },
+    "resGuid": "80ab63d4-5b9a-2e57-a85d-f6c78acb3ef6"
+  },
+  {
+    "guid": {
       "a": "d37da129-b667-0b97-a5e3-81fe6360ddf3",
       "b": ""
     },
@@ -2066,23 +2084,5 @@
     "sortMethod": 1,
     "enableInputTexture": false,
     "inputTexture": "00000000-0000-0000-0000-00000000004b"
-  },
-  {
-    "guid": {
-      "a": "f9047478-25a2-1e3c-dc6b-2a1e1b4792a0",
-      "b": ""
-    },
-    "objGuid": "Guid(5457885353813915454, 4392889087454985864)",
-    "extraType": "UserComponentEditor",
-    "name": "ProbeOnInit",
-    "version": "0.1.0",
-    "rttiType": "ProbeOnInit",
-    "editable": true,
-    "_lazyUpgrateVersion": "0.0.0",
-    "extendedInfo": {
-      "isVisibleInInspector": true,
-      "expanded": true
-    },
-    "resGuid": "80ab63d4-5b9a-2e57-a85d-f6c78acb3ef6"
   }
 ]
